@@ -38,11 +38,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #22bbff;
-  padding: 0 3px;
+  font-weight: bold;
+  padding: 0 2px;
   text-decoration: none;
   transition: .3s; }
   a:hover {
-    color: #000;
+    color: #fbff00;
     background-color: #22bbff; }
   a:active {
     color: #000;
@@ -110,7 +111,7 @@ table {
   line-height: 18px;
   color: #000;
   padding: 0 5px;
-  font-size: small;
+  font-size: medium;
   font-family: sans-serif;
   display: inline-block; }
 
@@ -278,11 +279,12 @@ article {
     font-family: BenderLight, sans-serif; }
   .recent-post .categories {
     color: #2bf;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     padding: 0 10px 0 0; }
   .recent-post .tags {
-    font-size: small; }
+    font-size: small;
+    font-weight: bold; }
     .recent-post .tags span, .recent-post .tags object {
       display: inline-block;
       padding: 0 5px 0 0; }
@@ -385,7 +387,7 @@ aside {
     width: 100%; }
 
 #Dr a {
-  color: #fff; }
+  color: lime; }
 
 #total {
   margin: 10px 0;
