@@ -1,0 +1,5417 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>嵌入式C-经典笔试题 | Raw-Stack|搬砖小栈</title><script src="https://cdn.bootcss.com/valine/1.4.4/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="/css/atom-one-dark-reasonable.min.css"><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Raw-Stack|搬砖小栈" type="application/atom+xml">
+</head><body><header><nav><a href="/">Home</a><a href="/about">About</a><a href="/archives">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-07-10T02:14:33.000Z" id="date"> 2020-07-10</time></span></div><h1>嵌入式C-经典笔试题</h1><hr></div><div id="post-content"><blockquote>
+<p>搬自：<a href="https://blog.csdn.net/ffmxnjm/article/details/51519976" target="_blank" rel="noopener">https://blog.csdn.net/ffmxnjm/article/details/51519976</a></p>
+</blockquote>
+<hr>
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc17734" target="_blank" rel="noopener">第一部分：基本概念及其它问答题 3</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc19682" target="_blank" rel="noopener">1、关键字static的作用是什么？&nbsp;3</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2714" target="_blank" rel="noopener">2、“引用”与指针的区别是什么？&nbsp;3</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc23737" target="_blank" rel="noopener">3、.h头文件中的ifndef/define/endif&nbsp;的作用？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27062" target="_blank" rel="noopener">4、#include&lt;file.h&gt;&nbsp;与&nbsp;#include "file.h"的区别？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2340" target="_blank" rel="noopener">5、描述实时系统的基本特性&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc9821" target="_blank" rel="noopener">6、全局变量和局部变量在内存中是否有区别？如果有，是什么区别？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc12308" target="_blank" rel="noopener">7、什么是平衡二叉树？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13046" target="_blank" rel="noopener">8、堆栈溢出一般是由什么原因导致的？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc15790" target="_blank" rel="noopener">9、冒泡排序算法的时间复杂度是什么？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc18718" target="_blank" rel="noopener">10、什么函数不能声明为虚函数？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13049" target="_blank" rel="noopener">11、队列和栈有什么区别？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25623" target="_blank" rel="noopener">12、不能做switch()的参数类型&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2847" target="_blank" rel="noopener">13、局部变量能否和全局变量重名？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc5005" target="_blank" rel="noopener">14、如何引用一个已经定义过的全局变量？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc15265" target="_blank" rel="noopener">15、全局变量可不可以定义在可被多个.C文件包含的头文件中？为什么？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc4473" target="_blank" rel="noopener">16、语句for(&nbsp;；1&nbsp;；)有什么问题？它是什么意思？&nbsp;4</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc12070" target="_blank" rel="noopener">18、statac&nbsp;全局变量、局部变量、函数与普通全局变量、局部变量、函数&nbsp;5</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc7216" target="_blank" rel="noopener">19、程序的内存分配&nbsp;5</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc22481" target="_blank" rel="noopener">20、解释堆和栈的区别&nbsp;6</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc24033" target="_blank" rel="noopener">21.什么是预编译，何时需要预编译&nbsp;7</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc7493" target="_blank" rel="noopener">22、关键字const是什么含意？&nbsp;7</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13584" target="_blank" rel="noopener">23、关键字volatile有什么含意 并给出三个不同的例子。&nbsp;8</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc19386" target="_blank" rel="noopener">24、三种基本的数据模型&nbsp;8</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc3531" target="_blank" rel="noopener">25、结构与联合有和区别？&nbsp;8</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc5333" target="_blank" rel="noopener">26、描述内存分配方式以及它们的区别?&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14770" target="_blank" rel="noopener">27、请说出const与#define&nbsp;相比，有何优点？&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc30751" target="_blank" rel="noopener">28、简述数组与指针的区别？&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25858" target="_blank" rel="noopener">29、分别写出BOOL,int,float,指针类型的变量a&nbsp;与“零”的比较语句。&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc22603" target="_blank" rel="noopener">30、如何判断一段程序是由C&nbsp;编译程序还是由C++编译程序编译的？&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc31048" target="_blank" rel="noopener">31、论述含参数的宏与函数的优缺点&nbsp;9</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27573" target="_blank" rel="noopener">32、用两个栈实现一个队列的功能？要求给出算法和思路！&nbsp;10</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc621" target="_blank" rel="noopener">33、嵌入式系统中经常要用到无限循环，你怎么样用C编写死循环呢？&nbsp;10</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27065" target="_blank" rel="noopener">34、位操作（Bit manipulation）&nbsp;10</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc4393" target="_blank" rel="noopener">35、访问固定的内存位置（Accessing fixed memory locations）&nbsp;11</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc9167" target="_blank" rel="noopener">36、中断（Interrupts）&nbsp;11</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc11820" target="_blank" rel="noopener">37、动态内存分配（Dynamic memory allocation）&nbsp;11</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc28824" target="_blank" rel="noopener">38、Typedef&nbsp;12</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc19327" target="_blank" rel="noopener">39、用变量a给出下面的定义&nbsp;12</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc16442" target="_blank" rel="noopener">40、解释局部变量、全局变量和静态变量的含义。&nbsp;13</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc19940" target="_blank" rel="noopener">41、写一个“标准”宏&nbsp;13</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc11460" target="_blank" rel="noopener">42、A.c&nbsp;和B.c两个c文件中使用了两个相同名字的static变量,编译的时候会不会有问题?&nbsp;13</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc22079" target="_blank" rel="noopener">43、一个单向链表，不知道头节点,一个指针指向其中的一个节点，问如何删除这个指针指向的节点？&nbsp;13</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc11878" target="_blank" rel="noopener">44. C语言中各进制表示法&nbsp;13</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc29526" target="_blank" rel="noopener">第二部分：程序代码评价或者找错 14</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6856" target="_blank" rel="noopener">1、下面的代码输出是什么，为什么？&nbsp;14</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc26207" target="_blank" rel="noopener">3、&nbsp;C语言同意一些令人震惊的结构,下面的结构是合法的吗，如果是它做些什么？&nbsp;15</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc4039" target="_blank" rel="noopener">4、设有以下说明和定义：&nbsp;15</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14647" target="_blank" rel="noopener">5、请写出下列代码的输出内容&nbsp;15</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc11612" target="_blank" rel="noopener">6、写出下列代码的输出内容&nbsp;15</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6979" target="_blank" rel="noopener">7、请找出下面代码中的所以错误&nbsp;16</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc24443" target="_blank" rel="noopener">8、请问下面程序有什么错误?&nbsp;17</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25147" target="_blank" rel="noopener">9、请问下面程序会出现什么情况?&nbsp;17</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc16428" target="_blank" rel="noopener">10、以下3个有什么区别&nbsp;17</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13944" target="_blank" rel="noopener">11、写出下面的结果&nbsp;18</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6957" target="_blank" rel="noopener">12、以下代码中的两个sizeof用法有问题吗？&nbsp;18</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc28276" target="_blank" rel="noopener">13、写出输出结果（红色标记） 18</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc10203" target="_blank" rel="noopener">14、请问以下代码有什么问题：&nbsp;19</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc31652" target="_blank" rel="noopener">15、有以下表达式：（红色标记） 19</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc29497" target="_blank" rel="noopener">16、交换两个变量的值，不使用第三个变量。&nbsp;19</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6874" target="_blank" rel="noopener">17、下面的程序会出现什么结果&nbsp;20</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc840" target="_blank" rel="noopener">18、下面的语句会出现什么结果？&nbsp;20</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc19645" target="_blank" rel="noopener">19、(void *)ptr&nbsp;和&nbsp;(*(void**))ptr的结果是否相同？（红色标记） &nbsp;&nbsp;？？？？ 20</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc17937" target="_blank" rel="noopener">20、问函数既然不会被其它函数调用，为什么要返回1？&nbsp;20</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc32555" target="_blank" rel="noopener">21、对绝对地址0x100000赋值且想让程序跳转到绝对地址是0x100000去执行&nbsp;20</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc12816" target="_blank" rel="noopener">22、输出多少？并分析过程&nbsp;21</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc22138" target="_blank" rel="noopener">23、分析下面的程序：&nbsp;21</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27359" target="_blank" rel="noopener">24、char a[10],strlen(a)为什么等于15？运行的结果&nbsp;&nbsp;&nbsp;我测了2 &nbsp;&nbsp;10&nbsp;22</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc15861" target="_blank" rel="noopener">25、long a=0x801010;a+5=?&nbsp;22</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc5204" target="_blank" rel="noopener">26、给定结构struct A&nbsp;22</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc24839" target="_blank" rel="noopener">27、下面的函数实现在一个数上加一个数，有什么错误？请改正。&nbsp;22</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc3948" target="_blank" rel="noopener">28、给出下面程序的答案（红色标记）//好像有问题&nbsp;22</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc31472" target="_blank" rel="noopener">29、求函数返回值，输入x=9999;&nbsp;******** &nbsp;&nbsp;还是不知道？？？？？？？&nbsp;23</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc30652" target="_blank" rel="noopener">30、分析：（红色标记） 24</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6397" target="_blank" rel="noopener">31、下面这个程序执行后会有什么错误或者效果:&nbsp;24</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc11584" target="_blank" rel="noopener">32、写出sizeof(struct name1)=,sizeof(struct name2)=的结果&nbsp;24</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2962" target="_blank" rel="noopener">33、struct s1（红色标记）*******&nbsp;25</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc21947" target="_blank" rel="noopener">34、在对齐为4的情况下&nbsp;&nbsp;注意************&nbsp;25</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25745" target="_blank" rel="noopener">35、找错&nbsp;26</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc23051" target="_blank" rel="noopener">36、写出输出结果&nbsp;&nbsp;&nbsp;？不懂 27</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc5598" target="_blank" rel="noopener">37、写出程序运行结果&nbsp;27</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc18197" target="_blank" rel="noopener">38、评价代码&nbsp;28</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6412" target="_blank" rel="noopener">39、请问一下程序将输出什么结果？&nbsp;&nbsp;**** 28</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc30531" target="_blank" rel="noopener">40、写出输出结果&nbsp;29</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc4477" target="_blank" rel="noopener">41、对下面程序进行分析&nbsp;29</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc20639" target="_blank" rel="noopener">42、分析：&nbsp;30</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc9339" target="_blank" rel="noopener">43、分析下面的代码：&nbsp;30</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc1295" target="_blank" rel="noopener">44、写出输出结果&nbsp;&nbsp;&nbsp;我的编译器&nbsp;m=7, n=7，b=7 &nbsp;若把++b变成b++，则结果为m=7, n=3，b=7&nbsp;30</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc24335" target="_blank" rel="noopener">45、找出错误&nbsp;&nbsp;&nbsp;//切记遇到char一定要考虑\0 &nbsp;和空间+1&nbsp;30</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27974" target="_blank" rel="noopener">第三部分：编程题 31</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc32679" target="_blank" rel="noopener">1、读文件file1.txt的内容（例如）：&nbsp;31</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc7268" target="_blank" rel="noopener">2、输出和为一个给定整数的所有组合&nbsp;32</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27075" target="_blank" rel="noopener">3、递规反向输出字符串的例子,可谓是反序的经典例程.********************************** 33</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc31059" target="_blank" rel="noopener">4、写一段程序，找出数组中第k大小的数，输出数所在的位置。&nbsp;34</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc31815" target="_blank" rel="noopener">5、两路归并排序&nbsp;&nbsp;&nbsp;&nbsp;好 比较简短 36</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc21613" target="_blank" rel="noopener">6、用递归算法判断数组a[N]是否为一个递增数组。&nbsp;36</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc1829" target="_blank" rel="noopener">7、单连表的建立，把'a'--'z'26个字母插入到连表中，并且倒叙，还要打印！&nbsp;37</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25326" target="_blank" rel="noopener">8、请列举一个软件中时间换空间或者空间换时间的例子。&nbsp;37</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc17269" target="_blank" rel="noopener">9、outputstr所指的值为123456789&nbsp;38</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc5937" target="_blank" rel="noopener">10、不用库函数,用C语言实现将一整型数字转化为字符串&nbsp;38</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2360" target="_blank" rel="noopener">11、求组合数： 求n个数（1....n）中k个数的组合....&nbsp;40</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc17376" target="_blank" rel="noopener">12、用指针的方法，将字符串“ABCD1234efgh”前后对调显示&nbsp;41</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc6239" target="_blank" rel="noopener">13、有一分数序列：1/2,1/4,1/6,1/8……，用函数调用的方法，求此数列前20项的和&nbsp;41</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc10608" target="_blank" rel="noopener">14、有一个数组a[1000]存放0--1000;要求每隔二个数删掉一个数，到末尾时循环至开头继续进行，求最后一个被删掉的数的原始下标位置。&nbsp;42</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14021" target="_blank" rel="noopener">15、实现strcmp&nbsp;44</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc18589" target="_blank" rel="noopener">16、实现子串定位&nbsp;45</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13119" target="_blank" rel="noopener">17、已知一个单向链表的头，请写出删除其某一个结点的算法，要求，先找到此结点，然后删除。&nbsp;45</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27085" target="_blank" rel="noopener">18、有1,2,....一直到n的无序数组,求排序算法,并且要求时间复杂度为O(n),空间复杂度O(1),使用交换,而且一次只能交换两个数.（华为）&nbsp;46</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc7666" target="_blank" rel="noopener">19、写出程序把一个链表中的接点顺序倒排&nbsp;46</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2177" target="_blank" rel="noopener">20、写出程序删除链表中的所有接点&nbsp;47</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc18573" target="_blank" rel="noopener">21、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串&nbsp;47</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc2867" target="_blank" rel="noopener">22、写一个函数，功能：完成内存之间的拷贝&nbsp;47</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc29974" target="_blank" rel="noopener">23、公司考试这种题目主要考你编写的代码是否考虑到各种情况，是否安全（不会溢出）&nbsp;48</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13146" target="_blank" rel="noopener">24、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串&nbsp;48</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc4210" target="_blank" rel="noopener">25、在一个字符串中找到可能的最长的子字符串，且该字符串是由同一字符组成的。&nbsp;49</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc20081" target="_blank" rel="noopener">26、在给定的内存区域搜索给定的字符，并返回该字符所在位置索引值。&nbsp;49</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc32204" target="_blank" rel="noopener">27、给定字符串A和B,输出A和B中的最大公共子串。&nbsp;49</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14375" target="_blank" rel="noopener">28、写一个函数比较两个字符串str1和str2的大小，若相等返回0，若str1大于&nbsp;50</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc25217" target="_blank" rel="noopener">29、求1000！的未尾有几个0（用素数相乘的方法来做，如72=2*2*2*3*3）;&nbsp;51</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc32551" target="_blank" rel="noopener">30、有双向循环链表结点定义为：&nbsp;51</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc7751" target="_blank" rel="noopener">31、编程实现：找出两个字符串中最大公共子字符串,如"abccade","dgcadde"的最大子串为"cad"&nbsp;53</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc18719" target="_blank" rel="noopener">32、编程实现：把十进制数(long型)分别以二进制和十六进制形式输出，不能使用printf系列库函数&nbsp;53</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14754" target="_blank" rel="noopener">33、输入N,&nbsp;打印&nbsp;N*N&nbsp;矩阵&nbsp;54</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc14310" target="_blank" rel="noopener">34、斐波拉契数列递归实现的方法如下：&nbsp;55</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc9445" target="_blank" rel="noopener">35、判断一个字符串是不是回文&nbsp;&nbsp;abcba从左从右都都是一样的叫回文&nbsp;56</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc24821" target="_blank" rel="noopener">36、Josephu&nbsp;问题为：设编号为1，2，… n的n个人围坐一圈&nbsp;56</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc13390" target="_blank" rel="noopener">37、已知strcpy函数的原型是：&nbsp;58</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc12691" target="_blank" rel="noopener">第四部分：附加部分 59</a></p>
+
+<p><a href="https://blog.csdn.net/ffmxnjm/article/details/51519976#_Toc27142" target="_blank" rel="noopener">1、位域 ：&nbsp;59</a></p>
+
+<h1><a name="t1"></a><a name="t1"></a><strong>第一部分：基本概念及其它问答题</strong></h1>
+
+<h2><a name="t2"></a><a name="t2"></a><a name="t1"></a><strong>1、关键字static的作用是什么？</strong></h2>
+
+<p>&nbsp;</p>
+
+<p>这个简单的问题很少有人能回答完全。在C语言中，关键字static有三个明显的作用：</p>
+
+<p>1). 在函数体，一个被声明为静态的变量在这一函数被调用过程中维持其值不变。</p>
+
+<p>2). 在模块内（但在函数体外），一个被声明为静态的变量可以被模块内所用函数访问，但不能被模块外其它函数访问。它是一个本地的全局变量。</p>
+
+<p>3). 在模块内，一个被声明为静态的函数只可被这一模块内的其它函数调用。那就是，这个函数被限制在声明它的模块的本地范围内使用。</p>
+
+<h2><a name="t3"></a><a name="t3"></a><a name="t2"></a><strong>2、“引用”与指针的区别是什么？</strong></h2>
+
+<p>答&nbsp;、1) 引用必须被初始化，指针不必。</p>
+
+<p>2) 引用初始化以后不能被改变，指针可以改变所指的对象。</p>
+
+<p>3) 不存在指向空值的引用，但是存在指向空值的指针。</p>
+
+<p>指针通过某个指针变量指向一个对象后，对它所指向的变量间接操作。程序中使用指针，程序的可读性差；而引用本身就是目标变量的别名，对引用的操作就是对目标变量的操作。&nbsp;</p>
+
+<p>流操作符&lt;&lt;和&gt;&gt;、赋值操作符=的返回值、拷贝构造函数的参数、赋值操作符=的参数、其它情况都推荐使用引用</p>
+
+<h2><a name="t4"></a><a name="t4"></a><a name="t3"></a><strong>3、.h头文件中的ifndef/define/endif&nbsp;的作用？</strong></h2>
+
+<p>答：防止该头文件被重复引用。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t5"></a><a name="t5"></a><a name="t4"></a><strong>4、#include&lt;file.h&gt;&nbsp;与&nbsp;#include "file.h"的区别？</strong></h2>
+
+<p>答：前者是从Standard Library标准库的路径寻找和引用file.h，而后者是从当前工作路径搜寻并引用file.h。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t6"></a><a name="t6"></a><a name="t5"></a><strong>5、描述实时系统的基本特性</strong></h2>
+
+<p>答&nbsp;：在特定时间内完成特定的任务，实时性与可靠性。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t7"></a><a name="t7"></a><a name="t6"></a><strong>6、全局变量和局部变量在内存中是否有区别？如果有，是什么区别？</strong></h2>
+
+<p>答&nbsp;：全局变量储存在静态数据区，局部变量在堆栈中。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t8"></a><a name="t8"></a><a name="t7"></a><strong>7、什么是平衡二叉树？</strong></h2>
+
+<p>答&nbsp;：左右子树都是平衡二叉树&nbsp;且左右子树的深度差值的绝对值不大于1。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t9"></a><a name="t9"></a><a name="t8"></a><strong>8、堆栈溢出一般是由什么原因导致的？</strong></h2>
+
+<p>答&nbsp;：1.没有回收垃圾资源</p>
+
+<p>&nbsp;2.层次太深的递归调用</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t10"></a><a name="t10"></a><a name="t9"></a><strong>9、冒泡排序算法的时间复杂度是什么？</strong></h2>
+
+<p>答&nbsp;：O(n^2)</p>
+
+<h2><a name="t11"></a><a name="t11"></a><a name="t10"></a><strong>10、什么函数不能声明为虚函数？</strong></h2>
+
+<p>答：constructor构造函数</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t12"></a><a name="t12"></a><a name="t11"></a><strong>11、队列和栈有什么区别？</strong></h2>
+
+<p>答：队列先进先出，栈后进先出</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t13"></a><a name="t13"></a><a name="t12"></a><strong>12、不能做switch()的参数类型</strong></h2>
+
+<p>答&nbsp;：switch的参数不能为实型（float double之类的）。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t14"></a><a name="t14"></a><a name="t13"></a><strong>13、局部变量能否和全局变量重名？</strong></h2>
+
+<p>答：能，局部会屏蔽全局。要用全局变量，需要使用"::"</p>
+
+<p>局部变量可以与全局变量同名，在函数内引用这个变量时，会用到同名的局部变量，而不会用到全局变量。对于有些编译器而言，在同一个函数内可以定义多个同名的局部变量，比如在两个循环体内都定义一个同名的局部变量，而那个局部变量的作用域就在那个循环体内</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t15"></a><a name="t15"></a><a name="t14"></a><strong>14、如何引用一个已经定义过的全局变量？</strong></h2>
+
+<p>答&nbsp;、可以用引用头文件的方式，也可以用extern关键字，如果用引用头文件方式来引用某个在头文件中声明的全局变量，假定你将那个变量写错了，那么在编译期间会报错，如果你用extern方式引用时，假定你犯了同样的错误，那么在编译期间不会报错，而在连接期间报错。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t16"></a><a name="t16"></a><a name="t15"></a><strong>15、全局变量可不可以定义在可被多个.C文件包含的头文件中？为什么？</strong></h2>
+
+<p>答&nbsp;、可以，在不同的C文件中以static形式来声明同名全局变量。</p>
+
+<p>可以在不同的C文件中声明同名的全局变量，前提是其中只能有一个C文件中对此变量赋初值，此时连接不会出错。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t17"></a><a name="t17"></a><a name="t16"></a><strong>16、语句for(&nbsp;；1&nbsp;；)有什么问题？它是什么意思？</strong></h2>
+
+<p>答&nbsp;、和while(1)相同，无限循环。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>17、do……while和while……do有什么区别？</strong></p>
+
+<p>答&nbsp;、前一个循环一遍再判断，后一个判断以后再循环。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t18"></a><a name="t18"></a><a name="t17"></a><strong>18、statac&nbsp;全局变量、局部变量、函数与普通全局变量、局部变量、函数</strong></h2>
+
+<p><strong>static全局变量与普通的全局变量有什么区别？static局部变量和普通局部变量有什么区别？static函数与普通函数有什么区别？</strong></p>
+
+<p>答&nbsp;、全局变量(外部变量)的说明之前再冠以static 就构成了静态的全局变量。全局变量本身就是静态存储方式，&nbsp;静态全局变量当然也是静态存储方式。&nbsp;这两者在存储方式上并无不同。这两者的区别虽在于非静态全局变量的作用域是整个源程序，&nbsp;当一个源程序由多个源文件组成时，非静态的全局变量在各个源文件中都是有效的。&nbsp;而静态全局变量则限制了其作用域，&nbsp;即只在定义该变量的源文件内有效，&nbsp;在同一源程序的其它源文件中不能使用它。由于静态全局变量的作用域局限于一个源文件内，只能为该源文件内的函数公用，&nbsp;因此可以避免在其它源文件中引起错误。</p>
+
+<p>从以上分析可以看出，&nbsp;把局部变量改变为静态变量后是改变了它的存储方式即改变了它的生存期。把全局变量改变为静态变量后是改变了它的作用域，&nbsp;限制了它的使用范围。</p>
+
+<p>static函数与普通函数作用域不同。仅在本文件。只在当前源文件中使用的函数应该说明为内部函数(static)，内部函数应该在当前源文件中说明和定义。对于可在当前源文件以外使用的函数，应该在一个头文件中说明，要使用这些函数的源文件要包含这个头文件</p>
+
+<p>static全局变量与普通的全局变量有什么区别：static全局变量只初使化一次，防止在其他文件单元中被引用;</p>
+
+<p>static局部变量和普通局部变量有什么区别：static局部变量只被初始化一次，下一次依据上一次结果值；</p>
+
+<p>static函数与普通函数有什么区别：static函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝</p>
+
+<p>&nbsp;</p>
+
+<p><strong>19、程序的内存分配</strong><br>
+答：一个由c/C++编译的程序占用的内存分为以下几个部分<br>
+1、栈区（stack）—由编译器自动分配释放，存放函数的参数值，局部变量的值等。其操作方式类似于数据结构中的栈。<br>
+2、堆区（heap）—一般由程序员分配释放，若程序员不释放，程序结束时可能由OS回收。注意它与数据结构中的堆是两回事，分配方式倒是类似于链表<br>
+3、全局区（静态区）（static）—全局变量和静态变量的存储是放在一块的，初始化的全局变量和静态变量在一块区域，未初始化的全局变量和未初始化的静态变量在相邻的另一块区域。程序结束后由系统释放。<br>
+4、文字常量区—常量字符串就是放在这里的。程序结束后由系统释放。<br>
+5、程序代码区—存放函数体的二进制代码</p>
+
+<p>&nbsp;</p>
+
+<p>例子程序<br>
+这是一个前辈写的，非常详细<br>
+//main.cpp<br>
+&nbsp; int a=0;&nbsp;&nbsp;&nbsp; //全局初始化区<br>
+&nbsp; char *p1;&nbsp;&nbsp; //全局未初始化区<br>
+&nbsp; main()<br>
+&nbsp; {<br>
+&nbsp;&nbsp; intb;栈<br>
+&nbsp;&nbsp; char s[]="abc";&nbsp;&nbsp; //栈<br>
+&nbsp;&nbsp; char *p2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //栈<br>
+&nbsp;&nbsp; char *p3="123456";&nbsp;&nbsp; //123456\0在常量区，p3在栈上。<br>
+&nbsp;&nbsp; static int c=0；&nbsp;&nbsp; //全局（静态）初始化区<br>
+&nbsp;&nbsp; p1 = (char*)malloc(10);<br>
+&nbsp;&nbsp; p2 = (char*)malloc(20);&nbsp;&nbsp; //分配得来得10和20字节的区域就在堆区。<br>
+&nbsp;&nbsp; strcpy(p1,"123456");&nbsp;&nbsp; //123456\0放在常量区，编译器可能会将它与p3所向"123456"优化成一个地方。<br>
+}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t19"></a><a name="t19"></a><a name="t18"></a><strong>20、解释堆和栈的区别</strong></h2>
+
+<p>答：堆（heap）和栈(stack)的区别</p>
+
+<p>（1）申请方式<br>
+stack:由系统自动分配。例如，声明在函数中一个局部变量int b;系统自动在栈中为b开辟空间<br>
+heap:需要程序员自己申请，并指明大小，在c中malloc函数<br>
+如p1=(char*)malloc(10);<br>
+在C++中用new运算符<br>
+如p2=(char*)malloc(10);<br>
+但是注意p1、p2本身是在栈中的。</p>
+
+<p>（2）申请后系统的响应<br>
+栈：只要栈的剩余空间大于所申请空间，系统将为程序提供内存，否则将报异常提示栈溢出。<br>
+堆：首先应该知道操作系统有一个记录空闲内存地址的链表，当系统收到程序的申请时，<br>
+会遍历该链表，寻找第一个空间大于所申请空间的堆结点，然后将该结点从空闲结点链表中删除，并将该结点的空间分配给程序，另外，对于大多数系统，会在这块内存空间中的首地址处记录本次分配的大小，这样，代码中的delete语句才能正确的释放本内存空间。另外，由于找到的堆结点的大小不一定正好等于申请的大小，系统会自动的将多余的那部分重新放入空闲链表中。</p>
+
+<p>（3）申请大小的限制<br>
+栈：在Windows下,栈是向低地址扩展的数据结构，是一块连续的内存的区域。这句话的意思是栈顶的地址和栈的最大容量是系统预先规定好的，在WINDOWS下，栈的大小是2M（也有的说是1M，总之是一个编译时就确定的常数），如果申请的空间超过栈的剩余空间时，将提示overflow。因此，能从栈获得的空间较小。<br>
+堆：堆是向高地址扩展的数据结构，是不连续的内存区域。这是由于系统是用链表来存储的空闲内存地址的，自然是不连续的，而链表的遍历方向是由低地址向高地址。堆的大小受限于计算机系统中有效的虚拟内存。由此可见，堆获得的空间比较灵活，也比较大。</p>
+
+<p>（4）申请效率的比较：<br>
+栈:由系统自动分配，速度较快。但程序员是无法控制的。<br>
+堆:是由new分配的内存，一般速度比较慢，而且容易产生内存碎片,不过用起来最方便.<br>
+另外，在WINDOWS下，最好的方式是用Virtual Alloc分配内存，他不是在堆，也不是在栈,而是直接在进程的地址空间中保留一块内存，虽然用起来最不方便。但是速度快，也最灵活。</p>
+
+<p>（5）堆和栈中的存储内容<br>
+栈：在函数调用时，第一个进栈的是主函数中后的下一条指令（函数调用语句的下一条可执行语句）的地址，然后是函数的各个参数，在大多数的C编译器中，参数是由右往左入栈的，然后是函数中的局部变量。注意静态变量是不入栈的。<br>
+当本次函数调用结束后，局部变量先出栈，然后是参数，最后栈顶指针指向最开始存的地址，也就是主函数中的下一条指令，程序由该点继续运行。<br>
+堆：一般是在堆的头部用一个字节存放堆的大小。堆中的具体内容由程序员安排。</p>
+
+<p>（6）存取效率的比较</p>
+
+<p>char s1[]="aaaaaaaaaaaaaaa";<br>
+char *s2="bbbbbbbbbbbbbbbbb";<br>
+aaaaaaaaaaa是在运行时刻赋值的；<br>
+而bbbbbbbbbbb是在编译时就确定的；<br>
+但是，在以后的存取中，在栈上的数组比指针所指向的字符串(例如堆)快。<br>
+比如：<br>
+#include<br>
+voidmain()<br>
+{<br>
+char a=1;<br>
+char c[]="1234567890";<br>
+char *p="1234567890";<br>
+a = c[1];<br>
+a = p[1];<br>
+return;<br>
+}<br>
+对应的汇编代码<br>
+10:a=c[1];<br>
+004010678A4DF1movcl,byteptr[ebp-0Fh]<br>
+0040106A884DFCmovbyteptr[ebp-4],cl<br>
+11:a=p[1];<br>
+0040106D8B55ECmovedx,dwordptr[ebp-14h]<br>
+004010708A4201moval,byteptr[edx+1]<br>
+004010738845FCmovbyteptr[ebp-4],al<br>
+第一种在读取时直接就把字符串中的元素读到寄存器cl中，而第二种则要先把指针值读到edx中，在根据edx读取字符，显然慢了。</p>
+
+<h2><a name="t20"></a><a name="t20"></a><a name="t19"></a><strong>21.什么是预编译，何时需要预编译</strong></h2>
+
+<p>答：预编译又称为预处理,是做些代码文本的替换工作。处理#开头的指令,比如拷贝#include包含的文件代码，#define宏定义的替换,条件编译等，就是为编译做的预备工作的阶段，主要处理#开始的预编译指令，预编译指令指示了在程序正式编译前就由编译器进行的操作，可以放在程序中的任何位置。</p>
+
+<p>c编译系统在对程序进行通常的编译之前，先进行预处理。c提供的预处理功能主要有以下三种：1）宏定义　2）文件包含　3）条件编译</p>
+
+<p>1、&nbsp;总是使用不经常改动的大型代码体。</p>
+
+<p>２、程序由多个模块组成，所有模块都使用一组标准的包含文件和相同的编译选项。在这种情况下，可以将所有包含文件预编译为一个预编译头。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t21"></a><a name="t21"></a><a name="t20"></a><strong>22、关键字const是什么含意？</strong></h2>
+
+<p>答：我只要一听到被面试者说：“const意味着常数”，我就知道我正在和一个业余者打交道。去年Dan Saks已经在他的文章里完全概括了const的所有用法，因此ESP(译者：Embedded Systems Programming)的每一位读者应该非常熟悉const能做什么和不能做什么.如果你从没有读到那篇文章，只要能说出const意味着“只读”就可以了。尽管这个答案不是完全的答案，但我接受它作为一个正确的答案。（如果你想知道更详细的答案，仔细读一下Saks的文章吧。）如果应试者能正确回答这个问题，我将问他一个附加的问题：下面的声明都是什么意思？</p>
+
+<p>const int a;</p>
+
+<p>int const a;</p>
+
+<p>const int *a;</p>
+
+<p>int * const a;</p>
+
+<p>int const * a const;</p>
+
+<p>前两个的作用是一样，a是一个常整型数。第三个意味着a是一个指向常整型数的指针（也就是，整型数是不可修改的，但指针可以）。第四个意思a是一个指向整型数的常指针（也就是说，指针指向的整型数是可以修改的，但指针是不可修改的）。最后一个意味着a是一个指向常整型数的常指针（也就是说，指针指向的整型数是不可修改的，同时指针也是不可修改的）。如果应试者能正确回答这些问题，那么他就给我留下了一个好印象。顺带提一句，也许你可能会问，即使不用关键字&nbsp;const，也还是能很容易写出功能正确的程序，那么我为什么还要如此看重关键字const呢？我也如下的几下理由：</p>
+
+<p>1).&nbsp;关键字const的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数为常量是为了告诉了用户这个参数的应用目的。如果你曾花很多时间清理其它人留下的垃圾，你就会很快学会感谢这点多余的信息。（当然，懂得用const的程序员很少会留下的垃圾让别人来清理的。）</p>
+
+<p>2).&nbsp;通过给优化器一些附加的信息，使用关键字const也许能产生更紧凑的代码。</p>
+
+<p>3).&nbsp;合理地使用关键字const可以使编译器很自然地保护那些不希望被改变的参数，防止其被无意的代码修改。简而言之，这样可以减少bug的出现</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t22"></a><a name="t22"></a><a name="t21"></a><strong>23、关键字volatile有什么含意 并给出三个不同的例子。</strong></h2>
+
+<p>答：一个定义为volatile的变量是说这变量可能会被意想不到地改变，这样，编译器就不会去假设这个变量的值了。精确地说就是，优化器在用到这个变量时必须每次都小心地重新读取这个变量的值，而不是使用保存在寄存器里的备份。下面是volatile变量的几个例子：</p>
+
+<p>1).&nbsp;并行设备的硬件寄存器（如：状态寄存器）</p>
+
+<p>2).&nbsp;一个中断服务子程序中会访问到的非自动变量(Non-automatic variables)</p>
+
+<p>3).&nbsp;多线程应用中被几个任务共享的变量</p>
+
+<p>回答不出这个问题的人是不会被雇佣的。我认为这是区分C程序员和嵌入式系统程序员的最基本的问题。嵌入式系统程序员经常同硬件、中断、RTOS等等打交道，所用这些都要求volatile变量。不懂得volatile内容将会带来灾难。</p>
+
+<p>假设被面试者正确地回答了这是问题（嗯，怀疑这否会是这样），我将稍微深究一下，看一下这家伙是不是直正懂得volatile完全的重要性。</p>
+
+<p>1).&nbsp;一个参数既可以是const还可以是volatile吗？解释为什么。</p>
+
+<p>2).&nbsp;一个指针可以是volatile&nbsp;吗？解释为什么。</p>
+
+<p>3).&nbsp;下面的函数有什么错误：</p>
+
+<p>int square(volatile int *ptr)</p>
+
+<p>{</p>
+
+<p>return *ptr * *ptr;</p>
+
+<p>}</p>
+
+<p>下面是答案：</p>
+
+<p>1).&nbsp;是的。一个例子是只读的状态寄存器。它是volatile因为它可能被意想不到地改变。它是const因为程序不应该试图去修改它。</p>
+
+<p>2).&nbsp;是的。尽管这并不很常见。一个例子是当一个中服务子程序修该一个指向一个buffer的指针时。</p>
+
+<p>3).&nbsp;这段代码的有个恶作剧。这段代码的目的是用来返指针*ptr指向值的平方，但是，由于*ptr指向一个volatile型参数，编译器将产生类似下面的代码：</p>
+
+<p>int square(volatile int *ptr)</p>
+
+<p>{</p>
+
+<p>int a,b;</p>
+
+<p>a = *ptr;</p>
+
+<p>b = *ptr;</p>
+
+<p>return a * b;</p>
+
+<p>}</p>
+
+<p>由于*ptr的值可能被意想不到地该变，因此a和b可能是不同的。结果，这段代码可能返不是你所期望的平方值！正确的代码如下：</p>
+
+<p>long square(volatile int *ptr)</p>
+
+<p>{</p>
+
+<p>int a;</p>
+
+<p>a = *ptr;</p>
+
+<p>return a * a;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t23"></a><a name="t23"></a><a name="t22"></a><strong>24、三种基本的数据模型</strong></h2>
+
+<p>答：按照数据结构类型的不同，将数据模型划分为层次模型、网状模型和关系模型。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t24"></a><a name="t24"></a><a name="t23"></a><strong>25、结构与联合有和区别？</strong></h2>
+
+<p>答：(1).&nbsp;结构和联合都是由多个不同的数据类型成员组成,&nbsp;但在任何同一时刻,&nbsp;联合中只存放了一个被选中的成员（所有成员共用一块地址空间）,&nbsp;而结构的所有成员都存在（不同成员的存放地址不同）。&nbsp;<br>
+&nbsp;(2).&nbsp;对于联合的不同成员赋值,&nbsp;将会对其它成员重写,&nbsp;原来成员的值就不存在了,&nbsp;而对于结构的不同成员赋值是互不影响的</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t25"></a><a name="t25"></a><a name="t24"></a><strong>26、描述内存分配方式以及它们的区别?</strong></h2>
+
+<p>答：1）&nbsp;从静态存储区域分配。内存在程序编译的时候就已经分配好，这块内存在程序的整个运行期间都存在。例如全局变量，static&nbsp;变量。<br>
+2）&nbsp;在栈上创建。在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集。<br>
+3）&nbsp;从堆上分配，亦称动态内存分配。程序在运行的时候用malloc&nbsp;或new&nbsp;申请任意多少的内存，程序员自己负责在何时用free&nbsp;或delete&nbsp;释放内存。动态内存的生存期由程序员决定，使用非常灵活，但问题也最多</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t26"></a><a name="t26"></a><a name="t25"></a><strong>27、请说出const与#define&nbsp;相比，有何优点？</strong></h2>
+
+<p>答：Const作用：定义常量、修饰函数参数、修饰函数返回值三个作用。被Const修饰的东西都受到强制保护，可以预防意外的变动，能提高程序的健壮性。</p>
+
+<p>1）&nbsp;const&nbsp;常量有数据类型，而宏常量没有数据类型。编译器可以对前者进行类型安全检查。而对后者只进行字符替换，没有类型安全检查，并且在字符替换可能会产生意料不到的错误。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2）&nbsp;有些集成化的调试工具可以对const&nbsp;常量进行调试，但是不能对宏常量进行调试。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t27"></a><a name="t27"></a><a name="t26"></a><strong>28、简述数组与指针的区别？</strong></h2>
+
+<p>答：数组要么在静态存储区被创建（如全局数组），要么在栈上被创建。指针可以随时指向任意类型的内存块。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(1)修改内容上的差别<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char a[] = “hello”;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[0] = ‘X’;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char *p = “world”; //&nbsp;注意p&nbsp;指向常量字符串<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p[0] = ‘X’; //&nbsp;编译器不能发现该错误，运行时错误<br>
+&nbsp;&nbsp;&nbsp;(2)&nbsp;用运算符sizeof&nbsp;可以计算出数组的容量（字节数）。sizeof(p),p&nbsp;为指针得到的是一个 指针变量的字节数，而不是p所指的内存容量。C++/C&nbsp;语言没有办法知道指针所指的内存容量，除非在申请内存时记住它。注意当数组作为函数的参数进行传递时，该数组自动退化为同类型的指针。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char a[] = "hello world";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char *p = a;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt; sizeof(a) &lt;&lt; endl; // 12&nbsp;字节<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt; sizeof(p) &lt;&lt; endl; // 4&nbsp;字节<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算数组和指针的内存容量<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void Func(char a[100])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt; sizeof(a) &lt;&lt; endl; // 4&nbsp;字节而不是100&nbsp;字节<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t28"></a><a name="t28"></a><a name="t27"></a><strong>29、分别写出BOOL,int,float,指针类型的变量a&nbsp;与“零”的比较语句。</strong></h2>
+
+<p>答：BOOL :&nbsp;&nbsp;&nbsp; if (&nbsp;!a&nbsp;) or if(a)<br>
+int :&nbsp;&nbsp;&nbsp;&nbsp; if ( a == 0)<br>
+float :&nbsp;&nbsp;&nbsp;const EXPRESSION EXP =&nbsp;0.000001<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( a &lt; EXP &amp;&amp; a &gt;-EXP)<br>
+pointer : if ( a !=&nbsp;NULL) or if(a == NULL)</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t29"></a><a name="t29"></a><a name="t28"></a><strong>30、如何判断一段程序是由C&nbsp;编译程序还是由C++编译程序编译的？</strong></h2>
+
+<p>答：#ifdef __cplusplus<br>
+cout&lt;&lt;"c++";<br>
+#else<br>
+cout&lt;&lt;"c";<br>
+#endif</p>
+
+<h2><a name="t30"></a><a name="t30"></a><a name="t29"></a><strong>31、论述含参数的宏与函数的优缺点</strong></h2>
+
+<p>答： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;带参宏 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;函数</p>
+
+<p>处理时间 &nbsp;&nbsp;&nbsp;编译时 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;程序运行时</p>
+
+<p>参数类型 &nbsp;&nbsp;没有参数类型问题 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定义实参、形参类型</p>
+
+<p>处理过程 &nbsp;&nbsp;不分配内存 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分配内存</p>
+
+<p>程序长度 &nbsp;&nbsp;变长 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不变</p>
+
+<p>运行速度 &nbsp;&nbsp;不占运行时间 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用和返回占用时间</p>
+
+<h2><a name="t31"></a><a name="t31"></a><a name="t30"></a><strong>32、用两个栈实现一个队列的功能？要求给出算法和思路！</strong></h2>
+
+<p>答 、设2个栈为A,B,&nbsp;一开始均为空.</p>
+
+<p>入队:</p>
+
+<p>将新元素push入栈A;</p>
+
+<p>出队:</p>
+
+<p>(1)判断栈B是否为空；</p>
+
+<p>(2)如果不为空，则将栈A中所有元素依次pop出并push到栈B；</p>
+
+<p>(3)将栈B的栈顶元素pop出；</p>
+
+<p>这样实现的队列入队和出队的平摊复杂度都还是O(1),&nbsp;比上面的几种方法要好</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t32"></a><a name="t32"></a><a name="t31"></a><strong>33、嵌入式系统中经常要用到无限循环，你怎么样用C编写死循环呢？</strong></h2>
+
+<p>答：这个问题用几个解决方案。我首选的方案是：</p>
+
+<p>while(1)</p>
+
+<p>{</p>
+
+<p>}</p>
+
+<p>一些程序员更喜欢如下方案：</p>
+
+<p>for(;;)</p>
+
+<p>{</p>
+
+<p>}</p>
+
+<p>这个实现方式让我为难，因为这个语法没有确切表达到底怎么回事。如果一个应试者给出这个作为方案，我将用这个作为一个机会去探究他们这样做的</p>
+
+<p>基本原理。如果他们的基本答案是：“我被教着这样做，但从没有想到过为什么。”这会给我留下一个坏印象。</p>
+
+<p>第三个方案是用&nbsp;goto</p>
+
+<p>Loop:</p>
+
+<p>...</p>
+
+<p>goto Loop;</p>
+
+<p>应试者如给出上面的方案，这说明或者他是一个汇编语言程序员（这也许是好事）或者他是一个想进入新领域的BASIC/FORTRAN程序员。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t33"></a><a name="t33"></a><a name="t32"></a><strong>34、位操作（Bit manipulation）&nbsp;</strong></h2>
+
+<p>答： 嵌入式系统总是要用户对变量或寄存器进行位操作。给定一个整型变量a，写两段代码，第一个设置a的bit 3，第二个清除a&nbsp;的bit 3。在以上两个操作中，要保持其它位不变。<br>
+对这个问题有三种基本的反应<br>
+1)不知道如何下手。该被面者从没做过任何嵌入式系统的工作。<br>
+2)&nbsp;用bit fields（字段）。Bit fields是被扔到C语言死角的东西，它保证你的代码在不同编译器之间是不可移植的，同时也保证了的你的代码是不可重用的。我最近不幸看到&nbsp;Infineon为其较复杂的通信芯片写的驱动程序，它用到了bit fields因此完全对我无用，因为我的编译器用其它的方式来实现bit fields的。从道德讲：永远不要让一个非嵌入式的家伙粘实际硬件的边。<br>
+3)&nbsp;用&nbsp;#defines&nbsp;和&nbsp;bit masks&nbsp;操作。这是一个有极高可移植性的方法，是应该被用到的方法。最佳的解决方案如下：<br>
+#define BIT3 (0x1 &lt;&lt; 3)<br>
+static int a;<br><br>
+void set_bit3(void)&nbsp;<br>
+{<br>
+&nbsp;&nbsp;&nbsp; a |= BIT3;<br>
+}<br>
+void clear_bit3(void)&nbsp;<br>
+{<br>
+&nbsp;&nbsp;&nbsp; a &amp;= ~BIT3;<br>
+}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;一些人喜欢为设置和清除值而定义一个掩码同时定义一些说明常数，这也是可以接受的。我希望看到几个要点：说明常数、|=和&amp;=~操作。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t34"></a><a name="t34"></a><a name="t33"></a><strong>35、访问固定的内存位置（Accessing fixed memory locations）&nbsp;</strong></h2>
+
+<p>答：嵌入式系统经常具有要求程序员去访问某特定的内存位置的特点。在某工程中，要求设置一绝对地址为0x67a9的整型变量的值为0xaa66。编译器是一个纯粹的ANSI编译器。写代码去完成这一任务。<br>
+这一问题测试你是否知道为了访问一绝对地址把一个整型数强制转换（typecast）为一指针是合法的。这一问题的实现方式随着个人风格不同而不同。典型的类似代码如下：<br>
+&nbsp;&nbsp;&nbsp; int *ptr;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ptr = (int *)0x67a9;//先取出地址de值付给指针<br>
+&nbsp;&nbsp;&nbsp; *ptr = 0xaa66;&nbsp;&nbsp;//再把指针解引用<br>
+&nbsp;A more obscure approach is:&nbsp;<br>
+一个较晦涩的方法是：<br>
+&nbsp;*(int * const)(0x67a9) = 0xaa55;<br>
+即使你的品味更接近第二种方案，但我建议你在面试时使用第一种方案。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t35"></a><a name="t35"></a><a name="t34"></a><strong>36、中断（Interrupts）&nbsp;</strong></h2>
+
+<p>答： 中断是嵌入式系统中重要的组成部分，这导致了很多编译开发商提供一种扩展—让标准C支持中断。具代表事实是，产生了一个新的关键字&nbsp;__interrupt。下面的代码就使用了__interrupt关键字去定义了一个中断服务子程序(ISR)，请评论一下这段代码的。<br><br>
+__interrupt double compute_area (double radius)&nbsp;<br>
+{<br>
+&nbsp;&nbsp;&nbsp; double area = PI * radius * radius;<br>
+&nbsp;&nbsp;&nbsp; printf("\nArea = %f", area);<br>
+&nbsp;&nbsp;&nbsp; return area;<br>
+}<br>
+这个函数有太多的错误了，以至让人不知从何说起了：<br>
+1)ISR&nbsp;不能返回一个值。</p>
+
+<p>2) ISR&nbsp;不能传递参数。<br>
+3)&nbsp;在许多的处理器/编译器中，浮点一般都是不可重入的。有些处理器/编译器需要让额处的寄存器入栈，有些处理器/编译器就是不允许在ISR中做浮点运算。此外，ISR应该是短而有效率的，在ISR中做浮点运算是不明智的。<br>
+4)&nbsp;与第三点一脉相承，printf()经常有重入和性能上的问题。&nbsp;&nbsp;&nbsp;如果你丢掉了第三和第四点，我不会太为难你的。不用说，如果你能得到后两点，那么你的被雇用前景越来越光明了。</p>
+
+<h2><a name="t36"></a><a name="t36"></a><a name="t35"></a><strong>37、动态内存分配（Dynamic memory allocation）&nbsp;</strong></h2>
+
+<p>答：尽管不像非嵌入式计算机那么常见，嵌入式系统还是有从堆（heap）中动态分配内存的过程的。那么嵌入式系统中，动态分配内存可能发生的问题是什么？<br>
+这里，我期望应试者能提到内存碎片，碎片收集的问题，变量的持行时间等等。这个主题已经在ESP杂志中被广泛地讨论过了（主要是&nbsp;P.J. Plauger,&nbsp;他的解释远远超过我这里能提到的任何解释），所有回过头看一下这些杂志吧！让应试者进入一种虚假的安全感觉后，我拿出这么一个小节目：<br>
+下面的代码片段的输出是什么，为什么？<br>
+char *ptr;<br>
+if ((ptr = (char *)malloc(0)) == NULL)&nbsp;<br>
+&nbsp;&nbsp;&nbsp; puts("Got a null pointer");<br>
+else<br>
+&nbsp;&nbsp;&nbsp; puts("Got a valid pointer");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;这是一个有趣的问题。最近在我的一个同事不经意把0值传给了函数malloc，得到了一个合法的指针之后，我才想到这个问题。这就是上面的代码，该代码的输出是"Got a valid pointer"。我用这个来开始讨论这样的一问题，看看被面试者是否想到库例程这样做是正确。得到正确的答案固然重要，但解决问题的方法和你做决定的基本原理更重要些。</p>
+
+<h2><a name="t37"></a><a name="t37"></a><a name="t36"></a><strong>38、Typedef&nbsp;</strong></h2>
+
+<p>答：Typedef&nbsp;在C语言中频繁用以声明一个已经存在的数据类型的同义字。也可以用预处理器做类似的事。例如，思考一下下面的例子：<br>
+#define dPS struct s *<br>
+typedef struct s * tPS;<br>
+&nbsp;&nbsp;&nbsp;以上两种情况的意图都是要定义dPS&nbsp;和&nbsp;tPS&nbsp;作为一个指向结构s指针。哪种方法更好呢？（如果有的话）为什么？<br>
+&nbsp;&nbsp;&nbsp;这是一个非常微妙的问题，任何人答对这个问题（正当的原因）是应当被恭喜的。答案是：typedef更好。思考下面的例子：<br>
+dPS p1,p2;&nbsp;//当变量的数目不止一个时define会出错<br>
+tPS p3,p4;<br>
+第一个扩展为<br>
+struct s * p1, p2;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上面的代码定义p1为一个指向结构的指，p2为一个实际的结构，这也许不是你想要的。第二个例子正确地定义了p3&nbsp;和p4&nbsp;两个指针。</p>
+
+<h2><a name="t38"></a><a name="t38"></a><a name="t37"></a><strong>39、用变量a给出下面的定义</strong></h2>
+
+<p>a)&nbsp;一个整型数（An integer）</p>
+
+<p>b)&nbsp;一个指向整型数的指针（A pointer to an integer）</p>
+
+<p>c)&nbsp;一个指向指针的的指针，它指向的指针是指向一个整型数（A pointer to a pointer to an integer）</p>
+
+<p>d)&nbsp;一个有10个整型数的数组（An array of 10 integers）</p>
+
+<p>e)&nbsp;一个有10个指针的数组，该指针是指向一个整型数的（An array of 10 pointers to integers）</p>
+
+<p>f)&nbsp;一个指向有10个整型数数组的指针（A pointer to an array of 10 integers）</p>
+
+<p>g)&nbsp;一个指向函数的指针，该函数有一个整型参数并返回一个整型数（A pointer to a function that takes an integer as an argument and returns an integer）</p>
+
+<p>h)&nbsp;一个有10个指针的数组，该指针指向一个函数，该函数有一个整型参数并返回一个整型数（&nbsp;An array of ten pointers to functions that take an integer</p>
+
+<p>argument and return an integer&nbsp;）</p>
+
+<p>&nbsp;</p>
+
+<p>答案是：</p>
+
+<p>a) int a; // An integer</p>
+
+<p>b) int *a; // A pointer to an integer</p>
+
+<p>c) int **a; // A pointer to a pointer to an integer</p>
+
+<p>d) int a[10]; // An array of 10 integers</p>
+
+<p>e) int *a[10]; // An array of 10 pointers to integers</p>
+
+<p>f) int (*a)[10]; // A pointer to an array of 10 integers</p>
+
+<p>g) int (*a)(int); // A pointer to a function a that takes an integer argument and returns an integer</p>
+
+<p>h) int (*a[10])(int); // An array of 10 pointers to functions that take an integer argument and return an integer</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t39"></a><a name="t39"></a><a name="t38"></a><strong>40、解释局部变量、全局变量和静态变量的含义。</strong></h2>
+
+<p>答：局部变量：在一个函数内部定义的变量是内部变量，它只在本函数范围内有效，也就是说只有在本函数内才能使用它们，在此函数以外时不能使用这些变量的，它们称为局部变量；<br>
+说明：<br>
+1.主函数main中定义的变量也只在主函数中有效，而不因为在主函数中定义而在整个文件或程序中有效<br>
+2.不同函数中可以使用名字相同的变量，它们代表不同的对象，互不干扰<br>
+3.形式参数也使局部变量<br>
+4.在一个函数内部，可以在复合语句中定义变量，这些变量只在本符合语句中有效<br>
+全局变量：在函数外定义的变量是外部变量，外部变量是全局变量，全局变量可以为本文件中其它函数所共用，它的有效范围从定义变量的位置开始到本源文件结束；<br>
+说明：<br>
+1.设全局变量的作用：增加了函数间数据联系的渠道<br>
+2.建议不再必要的时候不要使用全局变量，因为a.全局变量在程序的全部执行过程中都占用存储单元；</p>
+
+<p>b.它使函数的通用性降低了c.使用全局变量过多，会降低程序的清晰性<br>
+3.如果外部变量在文件开头定义，则在整个文件范围内都可以使用该外部变量，如果不再文件开头定义，按上面规定作用范围只限于定义点到文件终了。如果在定义点之前的函数想引用该外部变量，则应该在该函数中用关键字extern作外部变量说明<br>
+4.如果在同一个源文件中，外部变量与局部变量同名，则在局部变量的作用范围内，外部变量不起作用；<br>
+静态变量：在程序运行期间分配固定的存储空间的变量，叫做静态变量</p>
+
+<h2><a name="t40"></a><a name="t40"></a><a name="t39"></a><strong>41、写一个“标准”宏</strong></h2>
+
+<p>答：交换两个参数值的宏定义为：. #define&nbsp;SWAP(a,b)\</p>
+
+<p>&nbsp;(a)=(a)+(b);\</p>
+
+<p>(b)=(a)-(b);\</p>
+
+<p>(a)=(a)-(b);</p>
+
+<p>输入两个参数，输出较小的一个：#define MIN(A,B) ((A) &lt; (B))? (A) : (B))</p>
+
+<p>表明1年中有多少秒（忽略闰年问题）：#define SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</p>
+
+<p><strong>#define DOUBLE(x) x+x &nbsp;与 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#define DOUBLE(x)&nbsp;（（x）+（x））</strong></p>
+
+<p><strong>i = 5*DOUBLE(5)；&nbsp;i</strong>为30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>i = 5*DOUBLE(5)；&nbsp;i</strong>为50</p>
+
+<p>已知一个数组table，用一个宏定义，求出数据的元素个数</p>
+
+<p>#define NTBL</p>
+
+<p>#define NTBL (sizeof(table)/sizeof(table[0]))</p>
+
+<p><strong>42、A.c&nbsp;和B.c两个c文件中使用了两个相同名字的static变量,编译的时候会不会有问题?这两个static变量会保存到哪里（栈还是堆或者其他的）?</strong></p>
+
+<p>答：static的全局变量，表明这个变量仅在本模块中有意义，不会影响其他模块。</p>
+
+<p>他们都放在数据区，但是编译器对他们的命名是不同的。</p>
+
+<p>如果要使变量在其他模块也有意义的话，需要使用extern关键字。</p>
+
+<h2><a name="t41"></a><a name="t41"></a><a name="t40"></a><strong>43、一个单向链表，不知道头节点,一个指针指向其中的一个节点，问如何删除这个指针指向的节点？</strong></h2>
+
+<p>答：将这个指针指向的next节点值copy到本节点，将next指向next-&gt;next,并随后删除原next指向的节点。</p>
+
+<h2><a name="t42"></a><a name="t42"></a><a name="t41"></a>44.<strong>C语言中各进制表示法</strong></h2>
+
+<p>%d&nbsp;&nbsp; 代表十进制</p>
+
+<p>%o&nbsp;&nbsp; 代表八进制</p>
+
+<p>%x&nbsp;&nbsp;&nbsp;代表十六进制</p>
+
+<p>%u&nbsp;&nbsp; 无符号十进制数</p>
+
+<p>%e&nbsp;&nbsp;&nbsp; 以科学记数法表示</p>
+
+<p>%#o&nbsp; 代表带前缀o的八进制</p>
+
+<p>%#x&nbsp; 代表待前缀ox的十六进制</p>
+
+<p>\0oo&nbsp; 八进制值（o表示一个八进制数字）</p>
+
+<p>\xhh&nbsp; 十六进制值（h表示一个十六进制数字）</p>
+
+<p>&nbsp;</p>
+
+<p>16进制0x234这样的（如24就是0x018，凡是以0X或0x开头的数字序列）&nbsp;8进制01111这样的（凡是16进制0x234这样的（如24就是0x018，凡是以0X或0x开头的数字序列）&nbsp;8进制01111这样的（凡是以0开头的数字序列）以0开头的数字序列）</p>
+
+<p><img alt="" class="has" src="https://img-blog.csdn.net/20160527220917383?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
+
+<p>&nbsp;</p>
+
+<p>八进制数&nbsp;octal number&nbsp;&nbsp;二进制数binary number&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>十进制数Decimal Number&nbsp;&nbsp;&nbsp;</p>
+
+<p>十六进制数hexadecimal number</p>
+
+<p>&nbsp;</p>
+
+<h1><a name="t43"></a><a name="t43"></a><a name="t42"></a><strong>第二部分：程序代码评价或者找错</strong></h1>
+
+<p>&nbsp;</p>
+
+<p><strong>1、下面的代码输出是什么，为什么？</strong><br>
+void foo(void)<br>
+{<br>
+&nbsp;&nbsp;&nbsp; unsigned int a = 6;<br>
+&nbsp;&nbsp;&nbsp; int b = -20;<br>
+&nbsp;&nbsp;&nbsp; (a+b &gt; 6) ? puts("&gt; 6") : puts("&lt;= 6");<br>
+}<br>
+这个问题测试你是否懂得C语言中的整数自动转换原则，我发现有些开发者懂得极少这些东西。不管如何，这无符号整型问题的答案是输出是&nbsp;"&gt;6"。原因是当表达式中存在有符号类型和无符号类型时所有的操作数都自动转换为无符号类型。因此-20变成了一个非常大的正整数，所以该表达式计算出的结果大于6。这一点对于应当频繁用到无符号数据类型的嵌入式系统来说是丰常重要的。如果你答错了这个问题，你也就到了得不到这份工作的边缘。<br><strong>2、评价下面的代码片断：</strong><br>
+unsigned int zero = 0;<br>
+unsigned int compzero = 0xFFFF;&nbsp;<br>
+/*1's complement of zero */<br>
+对于一个int型不是16位的处理器为说，上面的代码是不正确的。应编写如下：<br>
+unsigned int compzero = ~0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;这一问题真正能揭露出应试者是否懂得处理器字长的重要性。在我的经验里，好的嵌入式程序员非常准确地明白硬件的细节和它的局限，然而PC机程序往往把硬件作为一个无法避免的烦恼。</p>
+
+<p><strong>3、&nbsp;C语言同意一些令人震惊的结构,下面的结构是合法的吗，如果是它做些什么？</strong><br>
+int a = 5, b = 7, c;<br>
+c = a+++b;<br>
+因此，上面的代码被处理成：<br>
+c = a++ + b;<br>
+因此,&nbsp;这段代码持行后a = 6, b = 7, c = 12。<br>
+如果你知道答案，或猜出正确答案，做得好。如果你不知道答案，我也不把这个当作问题。我发现这个问题的最大好处是这是一个关于代码编写风格，代码的可读性，代码的可修改性的好的话题。</p>
+
+<h2><a name="t44"></a><a name="t44"></a><a name="t43"></a><strong>4、设有以下说明和定义：</strong></h2>
+
+<p>typedef union {long i; int k[5]; char c;} DATE;</p>
+
+<p>struct data { int cat; DATE cow; double dog;} too;</p>
+
+<p>DATE max;</p>
+
+<p>则语句&nbsp;printf("%d",sizeof(struct date)+sizeof(max));的执行结果是？</p>
+
+<p>答 、结果是：52。DATE是一个union,&nbsp;变量公用空间.&nbsp;里面最大的变量类型是int[5],&nbsp;占用20个字节.&nbsp;所以它的大小是20</p>
+
+<p>data是一个struct,&nbsp;每个变量分开占用空间.&nbsp;依次为int4 + DATE20 + double8 = 32.</p>
+
+<p>所以结果是&nbsp;20 + 32 = 52.</p>
+
+<p>当然...在某些16位编辑器下, int可能是2字节,那么结果是&nbsp;int2 + DATE10 + double8 = 20</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t45"></a><a name="t45"></a><a name="t44"></a><strong>5、请写出下列代码的输出内容</strong></h2>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>main()</p>
+
+<p>{</p>
+
+<p>int a,b,c,d;</p>
+
+<p>a=10;</p>
+
+<p>b=a++;</p>
+
+<p>c=++a;</p>
+
+<p>d=10*a++;</p>
+
+<p>printf("b，c，d：%d，%d，%d"，b，c，d）;</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>答：10，12，120</p>
+
+<p>我总结：不管a的自加还是自减在等号的那一边，最终a自身的值也会改变</p>
+
+<h2><a name="t46"></a><a name="t46"></a><a name="t45"></a><strong>6、写出下列代码的输出内容</strong></h2>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>int inc(int a)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;return(++a);</p>
+
+<p>}</p>
+
+<p>int multi(int*a,int*b,int*c)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return(*c=*a**b);</p>
+
+<p>}</p>
+
+<p>typedef int(FUNC1)(int in);</p>
+
+<p>typedef int(FUNC2) (int*,int*,int*);</p>
+
+<p>&nbsp;</p>
+
+<p>void show(FUNC2 fun,int arg1, int*arg2)</p>
+
+<p>{</p>
+
+<p>INCp=&amp;inc;</p>
+
+<p>int temp =p(arg1);</p>
+
+<p>fun(&amp;temp,&amp;arg1, arg2);</p>
+
+<p>printf("%d\n",*arg2);</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>main()</p>
+
+<p>{</p>
+
+<p>int a;</p>
+
+<p>show(multi,10,&amp;a);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>答：110</p>
+
+<p><br><strong>7、请找出下面代码中的所以错误</strong></p>
+
+<p>说明：以下代码是把一个字符串倒序，如“abcd”倒序后变为“dcba”</p>
+
+<p>&nbsp;</p>
+
+<p>1、#include"string.h"</p>
+
+<p>2、main()</p>
+
+<p>3、{</p>
+
+<p>4、&nbsp;char*src="hello,world";</p>
+
+<p>5、&nbsp;char* dest=NULL;</p>
+
+<p>6、&nbsp;int len=strlen(src);</p>
+
+<p>7、&nbsp;dest=(char*)malloc(len);</p>
+
+<p>8、&nbsp;char* d=dest;</p>
+
+<p>9、&nbsp;char* s=src[len];</p>
+
+<p>10、&nbsp;while(len--!=0)</p>
+
+<p>11、&nbsp;d++=s--;</p>
+
+<p>12、&nbsp;printf("%s",dest);</p>
+
+<p>13、&nbsp;return 0;</p>
+
+<p>14、}</p>
+
+<p>答：</p>
+
+<p>方法1：</p>
+
+<p>int main(){</p>
+
+<p>char* src = "hello,world";</p>
+
+<p>int len = strlen(src);</p>
+
+<p>char* dest = (char*)malloc(len+1);//要为\0分配一个空间</p>
+
+<p>char* d = dest;</p>
+
+<p>char* s = &amp;src[len-1];//指向最后一个字符</p>
+
+<p>while( len-- != 0 )</p>
+
+<p>*d++=*s--;</p>
+
+<p>*d = 0;//尾部要加\0</p>
+
+<p>printf("%s\n",dest);</p>
+
+<p>free(dest);//&nbsp;使用完，应当释放空间，以免造成内存汇泄露</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>方法2：</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;string.h&gt;</p>
+
+<p>main()</p>
+
+<p>{</p>
+
+<p>char str[]="hello,world";</p>
+
+<p>int len=strlen(str);</p>
+
+<p>char t;</p>
+
+<p>for(int i=0; i&lt;len/2; i++)</p>
+
+<p>{</p>
+
+<p>t=str[i];</p>
+
+<p>str[i]=str[len-i-1]; str[len-i-1]=t;</p>
+
+<p>}</p>
+
+<p>printf("%s",str);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p><strong>8、请问下面程序有什么错误?</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;int a[60][250][1000],i,j,k;</p>
+
+<p>&nbsp;&nbsp;&nbsp;for(k=0;k&lt;=1000;k++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(j=0;j&lt;250;j++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0;i&lt;60;i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i][j][k]=0;</p>
+
+<p>答案：把循环语句内外换一下</p>
+
+<p>//对于多重循环一定是内循环数大于等于外循环数</p>
+
+<h2><a name="t47"></a><a name="t47"></a><a name="t46"></a><strong>9、请问下面程序会出现什么情况?</strong></h2>
+
+<p>. &nbsp;&nbsp;&nbsp;#define Max_CB 500</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;void LmiQueryCSmd(Struct MSgCB * pmsg)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned char ucCmdNum;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(ucCmdNum=0;ucCmdNum&lt;Max_CB;ucCmdNum++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>答案：死循环</p>
+
+<p>//字符型应该是到255，再加的话就溢出了，我觉得会出问题，可能就死循环了</p>
+
+<p><strong>10、以下3个有什么区别</strong><br>
+char * const p; //常量指针，p的值不可以修改</p>
+
+<p>char const * p；//指向常量的指针，指向的常量值不可以改</p>
+
+<p>const char *p；&nbsp;//和char const *p</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t48"></a><a name="t48"></a><a name="t47"></a><strong>11、写出下面的结果</strong></h2>
+
+<p>char str1[] = "abc";</p>
+
+<p>char str2[] = "abc";</p>
+
+<p>&nbsp;</p>
+
+<p>const char str3[] = "abc";</p>
+
+<p>const char str4[] = "abc";</p>
+
+<p>&nbsp;</p>
+
+<p>const char *str5 = "abc";</p>
+
+<p>const char *str6 = "abc";</p>
+
+<p>&nbsp;</p>
+
+<p>char *str7 = "abc";</p>
+
+<p>char *str8 = "abc";</p>
+
+<p>&nbsp;</p>
+
+<p>cout &lt;&lt; ( str1 == str2 ) &lt;&lt; endl;</p>
+
+<p>cout &lt;&lt; ( str3 == str4 ) &lt;&lt; endl;</p>
+
+<p>cout &lt;&lt; ( str5 == str6 ) &lt;&lt; endl;</p>
+
+<p>cout &lt;&lt; ( str7 == str8 ) &lt;&lt; endl;</p>
+
+<p>&nbsp;</p>
+
+<p>结果是：0 0 1 1</p>
+
+<p>解答：str1,str2,str3,str4是数组变量，它们有各自的内存空间；</p>
+
+<p>而str5,str6,str7,str8是指针，它们指向相同的常量区域。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t49"></a><a name="t49"></a><a name="t48"></a><strong>12、以下代码中的两个sizeof用法有问题吗？</strong></h2>
+
+<p>void UpperCase( char str[] ) //&nbsp;将&nbsp;str&nbsp;中的小写字母转换成大写字母</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for( size_t i=0; i&lt;sizeof(str)/sizeof(str[0]); ++i )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if( 'a'&lt;=str[i] &amp;&amp; str[i]&lt;='z' )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str[i] -= ('a'-'A' );</p>
+
+<p>}</p>
+
+<p>char str[] = "aBcDe";</p>
+
+<p>cout &lt;&lt; "str字符长度为: " &lt;&lt; sizeof(str)/sizeof(str[0]) &lt;&lt; endl;</p>
+
+<p>UpperCase( str );</p>
+
+<p>cout &lt;&lt; str &lt;&lt; endl;</p>
+
+<p>答：函数内的sizeof有问题。根据语法，sizeof如用于数组，只能测出静态数组的大小，无法检测动态分配的或外部数组大小。函数外的str是一个静态定义的数组，因此其大小为6，函数内的str实际只是一个指向字符串的指针，没有任何额外的与数组相关的信息，因此sizeof作用于上只将其当指针看，一个指针为4个字节，因此返回4。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t50"></a><a name="t50"></a><a name="t49"></a><strong>13、写出输出结果（红色标记）</strong></h2>
+
+<p>main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int a[5]={1,2,3,4,5};</p>
+
+<p>&nbsp;&nbsp;&nbsp;int *ptr=(int *)(&amp;a+1);</p>
+
+<p>printf("%d,%d",*(a+1),*(ptr-1));</p>
+
+<p>}</p>
+
+<p>输出：2,5</p>
+
+<p>*(a+1）就是a[1]，*(ptr-1)就是a[4],执行结果是2，5</p>
+
+<p>&amp;a+1不是首地址+1，系统会认为加一个a数组的偏移，是偏移了一个数组的大小（本例是5个int）</p>
+
+<p>int *ptr=(int *)(&amp;a+1);</p>
+
+<p>则ptr实际是&amp;(a[5]),也就是a+5</p>
+
+<p>原因如下：</p>
+
+<p>&amp;a是数组指针，其类型为&nbsp;int (*)[5];</p>
+
+<p>而指针加1要根据指针类型加上一定的值，</p>
+
+<p>不同类型的指针+1之后增加的大小不同</p>
+
+<p>a是长度为5的int数组指针，所以要加&nbsp;5*sizeof(int)</p>
+
+<p>所以ptr实际是a[5]</p>
+
+<p>但是prt与(&amp;a+1)类型是不一样的(这点很重要)</p>
+
+<p>所以prt-1只会减去sizeof(int*)</p>
+
+<p>a,&amp;a的地址是一样的，但意思不一样，a是数组首地址，也就是a[0]的地址，&amp;a是对象（数组）首地址，a+1是数组下一元素的地址，即a[1],&amp;a+1是下一个对象的地址，即a[5].</p>
+
+<h2><a name="t51"></a><a name="t51"></a><a name="t50"></a><strong>14、请问以下代码有什么问题：</strong></h2>
+
+<p>int &nbsp;main()</p>
+
+<p>{</p>
+
+<p>char a;</p>
+
+<p>char *str=&amp;a;</p>
+
+<p>strcpy(str,"hello");</p>
+
+<p>printf(str);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>没有为str分配内存空间，将会发生异常</p>
+
+<p>问题出在将一个字符串复制进一个字符变量指针所指地址。虽然可以正确输出结果，但因为越界进行内在读写而导致程序崩溃。</p>
+
+<p>char* s="AAA";</p>
+
+<p>printf("%s",s);</p>
+
+<p>s[0]='B';</p>
+
+<p>printf("%s",s);</p>
+
+<p>有什么错？</p>
+
+<p>"AAA"是字符串常量。s是指针，指向这个字符串常量，所以声明s的时候就有问题。</p>
+
+<p>cosnt char* s="AAA";</p>
+
+<p>然后又因为是常量，所以对是s[0]的赋值操作是不合法的。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t52"></a><a name="t52"></a><a name="t51"></a><strong>15、有以下表达式：（红色标记）</strong></h2>
+
+<p>int a=248; b=4;int const c=21;const int *d=&amp;a;</p>
+
+<p>int *const e=&amp;b;int const *f const =&amp;a;</p>
+
+<p>请问下列表达式哪些会被编译器禁止？为什么？</p>
+
+<p>*c=32;d=&amp;b;*d=43;e=34;e=&amp;a;f=0x321f;</p>
+
+<p>*c&nbsp;这是个什么东东，禁止</p>
+
+<p>*d&nbsp;说了是const， 禁止</p>
+
+<p>e = &amp;a&nbsp;说了是const&nbsp;禁止</p>
+
+<p>const *f const =&amp;a;&nbsp;禁止</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t53"></a><a name="t53"></a><a name="t52"></a><strong>16、交换两个变量的值，不使用第三个变量。</strong></h2>
+
+<p>即a=3,b=5,交换之后a=5,b=3;</p>
+
+<p>有两种解法,&nbsp;一种用算术算法,&nbsp;一种用^(异或)</p>
+
+<p>a = a + b;</p>
+
+<p>b = a - b;</p>
+
+<p>a = a - b;</p>
+
+<p>or</p>
+
+<p>a = a^b;//&nbsp;只能对int,char..</p>
+
+<p>b = a^b;</p>
+
+<p>a = a^b;</p>
+
+<p>or</p>
+
+<p>a ^= b ^= a;</p>
+
+<h2><a name="t54"></a><a name="t54"></a><a name="t53"></a><strong>17、下面的程序会出现什么结果</strong></h2>
+
+<p>.#include &lt;stdio.h&gt;</p>
+
+<p>&nbsp;&nbsp;#include &lt;stdlib.h&gt;</p>
+
+<p>&nbsp;&nbsp;void getmemory(char *p)&nbsp;&nbsp;&nbsp;&nbsp;//修改：（char **p）把地址传过来</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;p=(char *) malloc(100);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;strcpy(p,"hello world");</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;int main( )</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char *str=NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;getmemory(str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%s/n",str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;free(str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>程序崩溃，getmemory中的malloc&nbsp;不能返回动态内存，&nbsp;free（）对str操作很危险</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t55"></a><a name="t55"></a><a name="t54"></a><strong>18、下面的语句会出现什么结果？</strong></h2>
+
+<p>char szstr[10];</p>
+
+<p>&nbsp;&nbsp;&nbsp;strcpy(szstr,"0123456789");</p>
+
+<p>答案：长度不一样，会造成非法的OS，应该改为char szstr[11]；</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t56"></a><a name="t56"></a><a name="t55"></a><strong>19、(void *)ptr&nbsp;和&nbsp;(*(void**))ptr的结果是否相同？（红色标记）&nbsp;&nbsp;&nbsp;？？？？</strong></h2>
+
+<p>答：其中ptr为同一个指针</p>
+
+<p>.(void *)ptr&nbsp;和&nbsp;(*(void**))ptr值是相同的</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t57"></a><a name="t57"></a><a name="t56"></a><strong>20、问函数既然不会被其它函数调用，为什么要返回1？</strong></h2>
+
+<p>int main()</p>
+
+<p>&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int x=3;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%d",x);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>答：mian中，c标准认为0表示成功，非0表示错误。具体的值是某中具体出错信息</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t58"></a><a name="t58"></a><a name="t57"></a><strong>21、对绝对地址0x100000赋值且想让程序跳转到绝对地址是0x100000去执行</strong></h2>
+
+<p>(unsigned int*)0x100000 = 1234;&nbsp;&nbsp;&nbsp;//经典复制</p>
+
+<p>首先要将0x100000强制转换成函数指针,即:</p>
+
+<p>(void (*)())0x100000</p>
+
+<p>然后再调用它:</p>
+
+<p>*((void (*)())0x100000)();</p>
+
+<p>用typedef可以看得更直观些:</p>
+
+<p>typedef void(*)() voidFuncPtr;</p>
+
+<p>*((voidFuncPtr)0x100000)();</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t59"></a><a name="t59"></a><a name="t58"></a><strong>22、输出多少？并分析过程</strong></h2>
+
+<p>unsigned&nbsp;short A = 10;</p>
+
+<p>printf("~A = %u\n", ~A);</p>
+
+<p>&nbsp;</p>
+
+<p>char c=128;</p>
+
+<p>printf("c=%d\n",c);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;第一题，～A&nbsp;＝0xfffffff5,int值 为－11，但输出的是uint。所以输出4294967285</p>
+
+<p>第二题，c＝0x10,输出的是int，最高位为1，是负数，所以它的值就是0x00的补码就是128，所以输出－128。</p>
+
+<p>这两道题都是在考察二进制向int或uint转换时的最高位处理。</p>
+
+<p>补码：例如12模的系统中，加8和减4效果是一样的，因此凡是减4运算，都可以用加8来代替。对“模”而言，8和4互为补数。实际上以12模的系统中，11和1，10和2，9和3，7和5，6和6都有这个特性。共同的特点是两者相加等于模。在以12模的系统中，加8和减4效果是一样的，因此凡是减4运算，都可以用加8来代替。&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所以对于模为10000 0000的8位系统来说，减去b和加上10000 0000-b是一个道理，而（10000 0000-b）是什么？恰好就是b的补码（负数的补码等于其反码+1）&nbsp;定理：减去一个数就是加上它的补码，结果一样，所以解决了负数的计算。有了补码的概念，所有的加减都可以用加法来计算了。对于计算机而言方便了许多</p>
+
+<p>假设模为8（8位）的操作系统，即它能表示256个数，数的表示范围为-128----+127（共256，注意别忘了0），正负数各占一半-128------+127，但对于-128---- &nbsp;-1计算机会以它的补码表示即-128对应+128，-127---- +129，-126-----+130， &nbsp;&nbsp;-2----254，-1----+255，当在打印输出是如果你要在8位的操作系统中输出+128-------+255，它会以-128------- &nbsp;-1给你输出来</p>
+
+<h2><a name="t60"></a><a name="t60"></a><a name="t59"></a><strong>23、分析下面的程序：</strong></h2>
+
+<p>void GetMemory(char **p,int num)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;*p=(char *)malloc(num);</p>
+
+<p>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char *str=NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;GetMemory(&amp;str,100);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;strcpy(str,"hello");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;free(str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if(str!=NULL)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strcpy(str,"world");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("\n str is %s",str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;getchar();</p>
+
+<p>} &nbsp;&nbsp;&nbsp;</p>
+
+<p>问输出结果是什么？希望大家能说说原因，先谢谢了</p>
+
+<p>输出str is world。</p>
+
+<p>free&nbsp;只是释放的str指向的内存空间,它本身的值还是存在的.</p>
+
+<p>所以free之后，有一个好的习惯就是将str=NULL.</p>
+
+<p>此时str指向空间的内存已被回收,如果输出语句之前还存在分配空间的操作的话,这段存储空间是可能被重新分配给其他变量的,</p>
+
+<p>尽管这段程序确实是存在大大的问题（上面各位已经说得很清楚了），但是通常会打印出world来。</p>
+
+<p>这是因为，进程中的内存管理一般不是由操作系统完成的，而是由库函数自己完成的。</p>
+
+<p>当你malloc一块内存的时候，管理库向操作系统申请一块空间（可能会比你申请的大一些），然后在这块空间中记录一些管理信息（一般是在你申请的内存前面一点），并将可用内存的地址返回。但是释放内存的时候，管理库通常都不会将内存还给操作系统，因此你是可以继续访问这块地址的，只不过。。。。。。。。楼上都说过了，最好别这么干。</p>
+
+<h2><a name="t61"></a><a name="t61"></a><a name="t60"></a><strong>24、char a[10],strlen(a)为什么等于15？运行的结果&nbsp;&nbsp;&nbsp;我测了2 &nbsp;&nbsp;10</strong></h2>
+
+<p>#include "stdio.h"</p>
+
+<p>#include "string.h"</p>
+
+<p>&nbsp;</p>
+
+<p>void main()</p>
+
+<p>{</p>
+
+<p>char aa[10];</p>
+
+<p>printf("%d",strlen(aa));</p>
+
+<p>Printf(“%d”,sizeof(aa));</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>sizeof()和初不初始化，没有关系；</p>
+
+<p>strlen()和初始化有关。</p>
+
+<p>&nbsp;</p>
+
+<p>char (*str)[20];/*str是一个数组指针，即指向数组的指针．*/</p>
+
+<p>char *str[20];/*str是一个指针数组，其元素为指针型数据．*/</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t62"></a><a name="t62"></a><a name="t61"></a><strong>25、long a=0x801010;a+5=?</strong></h2>
+
+<p>答：0x801010用二进制表示为：“1000 0000 0001 0000 0001 0000”，十进制的值为8392720，再加上5就是8392725</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t63"></a><a name="t63"></a><a name="t62"></a><strong>26、给定结构struct A&nbsp;</strong></h2>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char t:：4;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char k:4;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned short i:8;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned long m;</p>
+
+<p>};问sizeof(A) = ?</p>
+
+<p>给定结构struct A</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char t:4; 4位</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char k:4; 4位</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned short i:8; 8位 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned long m; //&nbsp;偏移2字节保证4字节对齐</p>
+
+<p>}; //&nbsp;共8字节</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t64"></a><a name="t64"></a><a name="t63"></a><strong>27、下面的函数实现在一个数上加一个数，有什么错误？请改正。</strong></h2>
+
+<p>int add_n ( int n )</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;static int i = 100;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;i += n;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return i;</p>
+
+<p>}</p>
+
+<p>当你第二次调用时得不到正确的结果，难道你写个函数就是为了调用一次？问题就出在&nbsp;static上//static会把值保存下来</p>
+
+<h2><a name="t65"></a><a name="t65"></a><a name="t64"></a><strong>28、给出下面程序的答案（红色标记）//好像有问题</strong></h2>
+
+<p>#include&lt;iostream.h&gt;</p>
+
+<p>#include &lt;string.h&gt;</p>
+
+<p>#include &lt;malloc.h&gt;</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;stdlib.h&gt;</p>
+
+<p>#include &lt;memory.h&gt;</p>
+
+<p>typedef struct &nbsp;AA</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b1:5;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b2:2;</p>
+
+<p>}AA;</p>
+
+<p>void main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AA aa;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char cc[100];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strcpy(cc,"0123456789abcdefghijklmnopqrstuvwxyz");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memcpy(&amp;aa,cc,sizeof(AA));</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; aa.b1 &lt;&lt;endl;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; aa.b2 &lt;&lt;endl;</p>
+
+<p>}</p>
+
+<p>答案是&nbsp;-16和１</p>
+
+<p>首先sizeof(AA)的大小为4,b1和b2分别占5bit和2bit.</p>
+
+<p>经过strcpy和memcpy后,aa的4个字节所存放的值是:</p>
+
+<p>0,1,2,3的ASC码，即00110000,00110001,00110010,00110011</p>
+
+<p>所以，最后一步：显示的是这４个字节的前５位，和之后的２位</p>
+
+<p>分别为：10000,和01</p>
+
+<p>因为int是有正负之分　　所以：答案是-16和１</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t66"></a><a name="t66"></a><a name="t65"></a><strong>29、求函数返回值，输入x=9999;&nbsp;******** &nbsp;&nbsp;还是不知道？？？？？？？</strong></h2>
+
+<p>int func&nbsp;（&nbsp;x&nbsp;）</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int countx = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while ( x )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countx ++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x&amp;(x-1);&nbsp;&nbsp;&nbsp;//死记，反正数里面只要有1循环就不会停止，每次最低位一定被清零0---9最低 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位是0--1---0----1---0----交叉排列的</p>
+
+<p>}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return countx;</p>
+
+<p>}</p>
+
+<p>结果呢？</p>
+
+<p>知道了这是统计9999的二进制数值中有多少个1的函数，且有</p>
+
+<p>9999＝9×1024＋512＋256＋15</p>
+
+<p>&nbsp;</p>
+
+<p>9×1024中含有1的个数为2；</p>
+
+<p>512中含有1的个数为1；</p>
+
+<p>256中含有1的个数为1；</p>
+
+<p>15中含有1的个数为4；</p>
+
+<p>故共有1的个数为8，结果为8。</p>
+
+<p>1000 - 1 = 0111，正好是原数取反。这就是原理。</p>
+
+<p>用这种方法来求1的个数是很效率很高的。</p>
+
+<p>不必去一个一个地移位。循环次数最少。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t67"></a><a name="t67"></a><a name="t66"></a><strong>30、分析：（红色标记）</strong></h2>
+
+<p>struct bit</p>
+
+<p>{ &nbsp;&nbsp;int a:3;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int &nbsp;b:2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int c:3;</p>
+
+<p>};</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;bit s;</p>
+
+<p>&nbsp;&nbsp;char *c=(char*)&amp;s;</p>
+
+<p>&nbsp;&nbsp;&nbsp;cout&lt;&lt;sizeof(bit)&lt;&lt;endl;</p>
+
+<p>&nbsp;&nbsp;*c=0x99;</p>
+
+<p>&nbsp;&nbsp;&nbsp;cout &lt;&lt; s.a &lt;&lt;endl &lt;&lt;s.b&lt;&lt;endl&lt;&lt;s.c&lt;&lt;endl;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a=-1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;printf("%x",a);</p>
+
+<p>&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>输出为什么是</p>
+
+<p>4</p>
+
+<p>1</p>
+
+<p>-1</p>
+
+<p>-4</p>
+
+<p>ffffffff</p>
+
+<p>因为0x99在内存中表示为&nbsp;100 11 001 , a = 001, b = 11, c = 100</p>
+
+<p>当c为有符合数时, c = 100,&nbsp;最高1为表示c为负数，负数在计算机用补码表示，所以c = -4;同理</p>
+
+<p>b = -1;</p>
+
+<p>当c为有符合数时, c = 100,即&nbsp;c = 4,同理&nbsp;b = 3</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t68"></a><a name="t68"></a><a name="t67"></a><strong>31、下面这个程序执行后会有什么错误或者效果:</strong></h2>
+
+<p>&nbsp;#define MAX 255</p>
+
+<p>&nbsp;int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;unsigned char A[MAX],i;&nbsp;//i被定义为unsigned char</p>
+
+<p>&nbsp;&nbsp;&nbsp;for (i=0;i&lt;=MAX;i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A[i]=i;</p>
+
+<p>}</p>
+
+<p>解答：死循环加数组越界访问（C/C++不进行数组越界检查）</p>
+
+<p>MAX=255</p>
+
+<p>数组A的下标范围为:0..MAX-1,这是其一..</p>
+
+<p>其二.当i循环到255时,循环内执行:</p>
+
+<p>&nbsp;&nbsp;A[255]=255;</p>
+
+<p>这句本身没有问题..但是返回for (i=0;i&lt;=MAX;i++)语句时,</p>
+
+<p>由于unsigned char的取值范围在(0..255),i++以后i又为0了..无限循环下去.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t69"></a><a name="t69"></a><a name="t68"></a><strong>32、写出sizeof(struct name1)=,sizeof(struct name2)=的结果</strong></h2>
+
+<p>struct name1{</p>
+
+<p>&nbsp;&nbsp;&nbsp;char &nbsp;str;</p>
+
+<p>&nbsp;&nbsp;&nbsp;short x;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int &nbsp;&nbsp;num;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>struct name2{</p>
+
+<p>&nbsp;&nbsp;&nbsp;char str;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int num;</p>
+
+<p>&nbsp;&nbsp;&nbsp;short x;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>sizeof(struct name1)=8,sizeof(struct name2)=12</p>
+
+<p>在第二个结构中，为保证num按四个字节对齐，char后必须留出3字节的空间；同时为保证整个结构的自然对齐（这里是4字节对齐），在x后还要补齐2个字节，这样就是12字节。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t70"></a><a name="t70"></a><a name="t69"></a><strong>33、struct s1（红色标记）*******</strong></h2>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int i: 8;</p>
+
+<p>&nbsp;&nbsp;int j: 4;</p>
+
+<p>&nbsp;&nbsp;int a: 3;</p>
+
+<p>&nbsp;&nbsp;double b;</p>
+
+<p>};</p>
+
+<p>&nbsp;</p>
+
+<p>struct s2</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int i: 8;</p>
+
+<p>&nbsp;&nbsp;int j: 4;</p>
+
+<p>&nbsp;&nbsp;double b;</p>
+
+<p>&nbsp;&nbsp;int a:3;</p>
+
+<p>};</p>
+
+<p>&nbsp;</p>
+
+<p>printf("sizeof(s1)= %d\n", sizeof(s1));</p>
+
+<p>printf("sizeof(s2)= %d\n", sizeof(s2));</p>
+
+<p>result: 16, 24</p>
+
+<p>第一个struct s1</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int i: 8;</p>
+
+<p>&nbsp;&nbsp;int j: 4;</p>
+
+<p>&nbsp;&nbsp;int a: 3;</p>
+
+<p>&nbsp;&nbsp;double b;</p>
+
+<p>};</p>
+
+<p>理论上是这样的，首先是i在相对0的位置，占8位一个字节，然后，j就在相对一个字节的位置，由于一个位置的字节数是4位的倍数，因此不用对齐，就放在那里了，然后是a，要在3位的倍数关系的位置上，因此要移一位，在15位的位置上放下，目前总共是18位，折算过来是2字节2位的样子，由于double是8字节的，因此要在相对0要是8个字节的位置上放下，因此从18位开始到8个字节之间的位置被忽略，直接放在8字节的位置了，因此，总共是16字节。特殊注意</p>
+
+<p>第二个最后会对照是不是结构体内最大数据的倍数，不是的话，会补成是最大数据的倍数</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t71"></a><a name="t71"></a><a name="t70"></a><strong>34、在对齐为4的情况下&nbsp;&nbsp;注意************</strong></h2>
+
+<p>struct BBB</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;long num；</p>
+
+<p>&nbsp;&nbsp;&nbsp;char *name;</p>
+
+<p>&nbsp;&nbsp;&nbsp;short int data;</p>
+
+<p>&nbsp;&nbsp;&nbsp;char ha;</p>
+
+<p>&nbsp;&nbsp;&nbsp;short ba[5];</p>
+
+<p>}*p;</p>
+
+<p>p=0x1000000;</p>
+
+<p>p+0x200=____;</p>
+
+<p>(Ulong)p+0x200=____;</p>
+
+<p>(char*)p+0x200=____;</p>
+
+<p>希望各位达人给出答案和原因，谢谢拉</p>
+
+<p>解答：假设在32位CPU上，</p>
+
+<p>sizeof(long) = 4 bytes</p>
+
+<p>sizeof(char *) = 4 bytes</p>
+
+<p>sizeof(short int) = sizeof(short) = 2 bytes</p>
+
+<p>sizeof(char) = 1 bytes</p>
+
+<p>&nbsp;</p>
+
+<p>由于是4字节对齐，</p>
+
+<p>sizeof(struct BBB) = sizeof(*p)</p>
+
+<p>= 4 + 4 + 2 + 1 + 1/*补齐*/ + 2*5 + 2/*补齐*/ = 24 bytes &nbsp;(经Dev-C++验证)</p>
+
+<p>&nbsp;</p>
+
+<p>p=0x1000000;</p>
+
+<p>p+0x200=____;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;= 0x1000000 +&nbsp;0x200*24</p>
+
+<p>&nbsp;</p>
+
+<p>(Ulong)p+0x200=____;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;= 0x1000000 +&nbsp;0x200</p>
+
+<p>&nbsp;</p>
+
+<p>(char*)p+0x200=____;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;= 0x1000000 +&nbsp;0x200*4</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t72"></a><a name="t72"></a><a name="t71"></a><strong>35、找错</strong></h2>
+
+<p>Void test1()</p>
+
+<p>{</p>
+
+<p>char string[10];</p>
+
+<p>char* str1="0123456789";</p>
+
+<p>strcpy(string, str1);//&nbsp;溢出，应该包括一个存放'\0'的字符string[11]</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>Void test2()</p>
+
+<p>{</p>
+
+<p>char string[10], str1[10];</p>
+
+<p>for(I=0; I&lt;10;I++)</p>
+
+<p>{</p>
+
+<p>str1[i] ='a';</p>
+
+<p>}</p>
+
+<p>strcpy(string, str1);// I，i没有声明。</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>Void test3(char* str1)</p>
+
+<p>{</p>
+
+<p>char string[10];</p>
+
+<p>if(strlen(str1)&lt;=10)//&nbsp;改成&lt;10,字符溢出，将strlen改为sizeof也可以</p>
+
+<p>{</p>
+
+<p>strcpy(string, str1);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t73"></a><a name="t73"></a><a name="t72"></a><strong>36、写出输出结果&nbsp;&nbsp;&nbsp;？不懂</strong></h2>
+
+<p>void g(int**);</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>int line[10],i;</p>
+
+<p>int *p=line; //p是地址的地址</p>
+
+<p>for (i=0;i&lt;10;i++)</p>
+
+<p>{</p>
+
+<p>*p=i;</p>
+
+<p>g(&amp;p);//数组对应的值加1</p>
+
+<p>}</p>
+
+<p>for(i=0;i&lt;10;i++)</p>
+
+<p>printf("%d\n",line[i]);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>void g(int**p)</p>
+
+<p>{</p>
+
+<p>(**p)++;</p>
+
+<p>(*p)++;//&nbsp;无效</p>
+
+<p>}</p>
+
+<p>输出：</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>4</p>
+
+<p>5</p>
+
+<p>6</p>
+
+<p>7</p>
+
+<p>8</p>
+
+<p>9</p>
+
+<p>10</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t74"></a><a name="t74"></a><a name="t73"></a><strong>37、写出程序运行结果</strong></h2>
+
+<p>int sum(int a)</p>
+
+<p>{</p>
+
+<p>auto int c=0;</p>
+
+<p>static int b=3;</p>
+
+<p>c+=1;</p>
+
+<p>b+=2;</p>
+
+<p>return(a+b+c);</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>void main()</p>
+
+<p>{</p>
+
+<p>int I;</p>
+
+<p>int a=2;</p>
+
+<p>for(I=0;I&lt;5;I++)</p>
+
+<p>{</p>
+
+<p>printf("%d,", sum(a));</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>//&nbsp;static会保存上次结果，记住这一点，剩下的自己写</p>
+
+<p>输出：8,10,12,14,16,</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t75"></a><a name="t75"></a><a name="t74"></a><strong>38、评价代码</strong></h2>
+
+<p>int func(int a)</p>
+
+<p>{</p>
+
+<p>int b;</p>
+
+<p>switch(a)</p>
+
+<p>{</p>
+
+<p>case 1: 30;</p>
+
+<p>case 2: 20;</p>
+
+<p>case 3: 16;</p>
+
+<p>default: 0</p>
+
+<p>}</p>
+
+<p>return b;</p>
+
+<p>}</p>
+
+<p>则func(1)=?</p>
+
+<p>// b定义后就没有赋值</p>
+
+<p>&nbsp;</p>
+
+<p>int a[3];</p>
+
+<p>a[0]=0; a[1]=1; a[2]=2;</p>
+
+<p>int *p, *q;</p>
+
+<p>p=a;</p>
+
+<p>q=&amp;a[2];</p>
+
+<p>则a[q-p]=a[2]</p>
+
+<p>解释：指针一次移动一个int但计数为1</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t76"></a><a name="t76"></a><a name="t75"></a><strong>39、请问一下程序将输出什么结果？&nbsp;&nbsp;****</strong></h2>
+
+<p>char *RetMenory(void)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char p[] = “hellow world”;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return p;</p>
+
+<p>}</p>
+
+<p>void Test(void)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char *str = NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str = RetMemory();</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(str);</p>
+
+<p>}</p>
+
+<p>RetMenory执行完毕，p资源被回收，指向未知地址。返回地址，str的内容应是不可预测的,&nbsp;打印的应该是str的地址</p>
+
+<h2><a name="t77"></a><a name="t77"></a><strong>&nbsp;</strong></h2>
+
+<h2><a name="t78"></a><a name="t78"></a><a name="t77"></a><strong>40、写出输出结果</strong></h2>
+
+<p>typedef struct</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a:2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b:2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int c:1;</p>
+
+<p>&nbsp;&nbsp;}test;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;test t;</p>
+
+<p>&nbsp;&nbsp;t.a = 1;</p>
+
+<p>&nbsp;&nbsp;t.b = 3;</p>
+
+<p>&nbsp;&nbsp;t.c = 1;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;printf("%d",t.a);</p>
+
+<p>&nbsp;&nbsp;printf("%d",t.b);</p>
+
+<p>&nbsp;&nbsp;printf("%d",t.c);</p>
+
+<p>&nbsp;</p>
+
+<p>t.a为01,输出就是1</p>
+
+<p>t.b为11，输出就是－1</p>
+
+<p>t.c为1，输出也是-1</p>
+
+<p>3个都是有符号数int嘛。</p>
+
+<p>这是位扩展问题&nbsp;//查一下</p>
+
+<p>01</p>
+
+<p>11</p>
+
+<p>1</p>
+
+<p>编译器进行符号扩展</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t79"></a><a name="t79"></a><a name="t78"></a><strong>41、对下面程序进行分析</strong></h2>
+
+<p>void test2()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;char string[10], str1[10];</p>
+
+<p>&nbsp;&nbsp;&nbsp;int i;</p>
+
+<p>&nbsp;&nbsp;&nbsp;for(i=0; i&lt;10; i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str1[i] = 'a';</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;strcpy( string, str1 );</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>解答：如果面试者指出字符数组str1不能在数组内结束可以给3分；如果面试者指出strcpy(string, str1)调用使得从str1内存起复制到string内存起所复制的字节数具有不确定性可以给7分，在此基础上指出库函数strcpy工作方式的给10分；</p>
+
+<p>str1不能在数组内结束:因为str1的存储为：{a,a,a,a,a,a,a,a,a,a},没有'\0'(字符串结束符)，所以不能结束</p>
+
+<p>strcpy( char *s1,char *s2)他的工作原理是，扫描s2指向的内存，逐个字符付到s1所指向的内存，直到碰到'\0',因为str1结尾没有'\0'，所以具有不确定性，不知道他后面还会付什么东东。</p>
+
+<p>正确应如下</p>
+
+<p>void test2()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;char string[10], str1[10];</p>
+
+<p>&nbsp;&nbsp;&nbsp;int i;</p>
+
+<p>&nbsp;&nbsp;&nbsp;for(i=0; i&lt;9; i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str1[i] = 'a'+i;&nbsp;//把abcdefghi赋值给字符数组</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;str[i]='\0';//加上结束符</p>
+
+<p>&nbsp;&nbsp;&nbsp;strcpy( string, str1 );</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t80"></a><a name="t80"></a><a name="t79"></a><strong>42、分析：</strong></h2>
+
+<p>int arr[] = {6,7,8,9,10};</p>
+
+<p>int *ptr = arr;</p>
+
+<p>*(ptr++)+=123;</p>
+
+<p>printf(“ %d %d ”, *ptr, *(++ptr));</p>
+
+<p>输出：8 8</p>
+
+<p>过程：对于*(ptr++)+=123;先做加法6+123，然后++，指针指向7；对于printf(“ %d %d ”, *ptr, *(++ptr));从后往前执行，指针先++，指向8，然后输出8，紧接着再输出8</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t81"></a><a name="t81"></a><a name="t80"></a><strong>43、分析下面的代码：</strong></h2>
+
+<p>char *a = "hello";</p>
+
+<p>char *b = "hello";</p>
+
+<p>if(a==b)</p>
+
+<p>printf("YES");</p>
+
+<p>else</p>
+
+<p>printf("NO");</p>
+
+<p>这个简单的面试题目,我选输出&nbsp;no(对比的应该是指针地址吧),可在VC是YES&nbsp;在C是NO</p>
+
+<p>lz的呢，是一个常量字符串。位于静态存储区，它在程序生命期内恒定不变。如果编译器优化的话，会有可能a和b同时指向同一个hello的。则地址相同。如果编译器没有优化，那么就是两个不同的地址，则不同</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t82"></a><a name="t82"></a><a name="t81"></a><strong>44、写出输出结果&nbsp;&nbsp;&nbsp;我的编译器&nbsp;m=7, n=7，b=7 &nbsp;若把++b变成b++，则结果为m=7, n=3，b=7</strong></h2>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>void foo(int m, int n)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("m=%d, n=%d\n", m, n);</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int b = 3;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;foo(b+=3, ++b);&nbsp;&nbsp;&nbsp;&nbsp;//遇到函数里自加减的这种题都不定别去管</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("b=%d\n", b);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>输出：m=7,n=4,b=7(VC6.0)</p>
+
+<p>这种方式和编译器中得函数调用关系相关即先后入栈顺序。不过不同编译器得处理不同。也是因为C标准中对这种方式说明为未定义，所以各个编译器厂商都有自己得理解，所以最后产生得结果完全不同。因为这样，所以遇见这种函数，我们首先要考虑我们得编译器会如何处理这样得函数，其次看函数得调用方式，不同得调用方式，可能产生不同得结果。最后是看编译器优化。</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t83"></a><a name="t83"></a><a name="t82"></a><strong>45、找出错误&nbsp;&nbsp;&nbsp;//切记遇到char一定要考虑\0 &nbsp;和空间+1</strong></h2>
+
+<p>#include string.h</p>
+
+<p>main(void)</p>
+
+<p>{ &nbsp;&nbsp;char &nbsp;&nbsp;*src="hello,world";</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*dest=NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;dest=(char &nbsp;&nbsp;*)malloc(strlen(src));</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int &nbsp;&nbsp;len=strlen(str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*d=dest;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*s=src[len];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while(len--!=0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d++=s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%s",dest);</p>
+
+<p>}</p>
+
+<p>找出错误！！&nbsp;&nbsp;实现逆排 &nbsp;****************</p>
+
+<p>#include&nbsp;"string.h"</p>
+
+<p>#include "stdio.h"</p>
+
+<p>#include "malloc.h"</p>
+
+<p>main(void)</p>
+
+<p>{ &nbsp;&nbsp;</p>
+
+<p>char &nbsp;&nbsp;*src="hello,world";</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*dest=NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;dest=(char &nbsp;&nbsp;*)malloc(sizeof(char)*(strlen(src)+1));</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int &nbsp;&nbsp;len=strlen(src);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*d=dest;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;*s=src+len-1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while(len--!=0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++=*s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d='\0';</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%s",dest);</p>
+
+<p>}</p>
+
+<h1><a name="t84"></a><a name="t84"></a><a name="t83"></a><strong>第三部分：编程题</strong></h1>
+
+<h2><a name="t85"></a><a name="t85"></a><a name="t84"></a><strong>1、读文件file1.txt的内容（例如）：</strong></h2>
+
+<p>12</p>
+
+<p>34</p>
+
+<p>56</p>
+
+<p>输出到file2.txt：</p>
+
+<p>56</p>
+
+<p>34</p>
+
+<p>12</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;stdlib.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>int main(void)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int MAX = 10;</p>
+
+<p>int *a = (int *)malloc(MAX * sizeof(int));</p>
+
+<p>int *b;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>FILE *fp1;</p>
+
+<p>FILE *fp2;</p>
+
+<p>&nbsp;</p>
+
+<p>fp1 = fopen("a.txt","r");</p>
+
+<p>if(fp1 == NULL)</p>
+
+<p>{printf("error1");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;exit(-1);</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;fp2 = fopen("b.txt","w");</p>
+
+<p>if(fp2 == NULL)</p>
+
+<p>{printf("error2");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;exit(-1);</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>int i = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int j = 0;</p>
+
+<p>&nbsp;</p>
+
+<p>while(fscanf(fp1,"%d",&amp;a[i]) != EOF)</p>
+
+<p>{</p>
+
+<p>i++;</p>
+
+<p>j++;</p>
+
+<p>if(i &gt;= MAX)</p>
+
+<p>{</p>
+
+<p>MAX = 2 * MAX;</p>
+
+<p>b = (int*)realloc(a,MAX * sizeof(int));</p>
+
+<p>if(b == NULL)</p>
+
+<p>{</p>
+
+<p>printf("error3");</p>
+
+<p>exit(-1);</p>
+
+<p>}</p>
+
+<p>a = b;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>for(;--j &gt;= 0;)</p>
+
+<p>&nbsp;&nbsp;&nbsp;fprintf(fp2,"%d\n",a[j]);</p>
+
+<p>&nbsp;</p>
+
+<p>fclose(fp1);</p>
+
+<p>fclose(fp2);</p>
+
+<p>&nbsp;</p>
+
+<p>return 0;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t86"></a><a name="t86"></a><a name="t85"></a><strong>2、输出和为一个给定整数的所有组合</strong></h2>
+
+<p>例如n=5</p>
+
+<p>5=1+4；5=2+3（相加的数不能重复）</p>
+
+<p>则输出</p>
+
+<p>1，4；2，3。</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>int main(void)</p>
+
+<p>{</p>
+
+<p>unsigned long int i,j,k;</p>
+
+<p>&nbsp;</p>
+
+<p>printf("please input the number\n");</p>
+
+<p>scanf("%d",&amp;i);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if( i % 2 == 0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j = i / 2;&nbsp;&nbsp;&nbsp;//思想：一个被加数一定是这个数的1/2的左边，一个在右边</p>
+
+<p>else</p>
+
+<p>j = i / 2 + 1;</p>
+
+<p>&nbsp;</p>
+
+<p>printf("The result is \n");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(k = 0; k &lt; j; k++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d = %d + %d\n",i,k,i - k);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>void main()</p>
+
+<p>{</p>
+
+<p>unsigned long int a,i=1;</p>
+
+<p>scanf("%d",&amp;a);</p>
+
+<p>if(a%2==0)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=1;i&lt;a/2;i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d",a,a-i);</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>for(i=1;i&lt;=a/2;i++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" %d, %d",i,a-i);</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t87"></a><a name="t87"></a><a name="t86"></a><strong>3、递规反向输出字符串的例子,可谓是反序的经典例程.**********************************</strong></h2>
+
+<p>void inverse(char *p)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if( *p = = '\0' )</p>
+
+<p>return;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;inverse( p+1 );&nbsp;&nbsp;&nbsp;//切记：对于字符串的指针加1，就是指向最后一个字符</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf( "%c", *p );</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>int main(int argc, char *argv[])</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;inverse("abc\0");</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p><strong>对1的另一种做法：</strong></p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>void test(FILE *fread, FILE *fwrite)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char buf[1024] = {0};</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!fgets(buf, sizeof(buf), fread))</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test( fread, fwrite );</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs(buf, fwrite);</p>
+
+<p>}</p>
+
+<p>int main(int argc, char *argv[])</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILE *fr = NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILE *fw = NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fr = fopen("data", "rb");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fw = fopen("dataout", "wb");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test(fr, fw);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fr);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fw);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>4、写一段程序，找出数组中第k大小的数，输出数所在的位置。</strong>例如{2，4，3，4，7}中，第一大的数是7，位置在4。第二大、第三大的数都是4，位置在1、3随便输出哪一个均可。函数接口为：int find_orderk(const int* narry,const int n,const int k)</p>
+
+<p>要求算法复杂度不能是O(n^2）</p>
+
+<p>谢谢！</p>
+
+<p>可以先用快速排序进行排序，其中用另外一个进行地址查找</p>
+
+<p>代码如下，在VC++6.0运行通过。给分吧^-^</p>
+
+<p>&nbsp;</p>
+
+<p>//快速排序</p>
+
+<p>&nbsp;</p>
+
+<p>#include&lt;iostream&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>usingnamespacestd;</p>
+
+<p>&nbsp;</p>
+
+<p>intPartition (int*L,intlow,int high)</p>
+
+<p>{</p>
+
+<p>inttemp = L[low];</p>
+
+<p>intpt = L[low];</p>
+
+<p>&nbsp;</p>
+
+<p>while (low &lt; high)</p>
+
+<p>{</p>
+
+<p>while (low &lt; high &amp;&amp; L[high] &gt;= pt)</p>
+
+<p>--high;</p>
+
+<p>L[low] = L[high];</p>
+
+<p>while (low &lt; high &amp;&amp; L[low] &lt;= pt)</p>
+
+<p>++low;</p>
+
+<p>L[low] = temp;</p>
+
+<p>}</p>
+
+<p>L[low] = temp;</p>
+
+<p>&nbsp;</p>
+
+<p>returnlow;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>voidQSort (int*L,intlow,int high)</p>
+
+<p>{</p>
+
+<p>if (low &lt; high)</p>
+
+<p>{</p>
+
+<p>intpl = Partition (L,low,high);</p>
+
+<p>&nbsp;</p>
+
+<p>QSort (L,low,pl - 1);</p>
+
+<p>QSort (L,pl + 1,high);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>intmain ()</p>
+
+<p>{</p>
+
+<p>intnarry[100],addr[100];</p>
+
+<p>intsum = 1,t;</p>
+
+<p>&nbsp;</p>
+
+<p>cout &lt;&lt; "Input number:" &lt;&lt; endl;</p>
+
+<p>cin &gt;&gt; t;</p>
+
+<p>&nbsp;</p>
+
+<p>while (t != -1)</p>
+
+<p>{</p>
+
+<p>narry[sum] = t;</p>
+
+<p>addr[sum - 1] = t;</p>
+
+<p>sum++;</p>
+
+<p>&nbsp;</p>
+
+<p>cin &gt;&gt; t;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>sum -= 1;</p>
+
+<p>QSort (narry,1,sum);</p>
+
+<p>&nbsp;</p>
+
+<p>for (int i = 1; i &lt;= sum;i++)</p>
+
+<p>cout &lt;&lt; narry[i] &lt;&lt; '\t';</p>
+
+<p>cout &lt;&lt; endl;</p>
+
+<p>&nbsp;</p>
+
+<p>intk;</p>
+
+<p>cout &lt;&lt; "Please input place you want:" &lt;&lt; endl;</p>
+
+<p>cin &gt;&gt; k;</p>
+
+<p>&nbsp;</p>
+
+<p>intaa = 1;</p>
+
+<p>intkk = 0;</p>
+
+<p>for (;;)</p>
+
+<p>{</p>
+
+<p>if (aa == k)</p>
+
+<p>break;</p>
+
+<p>if (narry[kk] != narry[kk + 1])</p>
+
+<p>{</p>
+
+<p>aa += 1;</p>
+
+<p>kk++;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>cout &lt;&lt; "The NO." &lt;&lt; k &lt;&lt; "number is:" &lt;&lt; narry[sum - kk] &lt;&lt; endl;</p>
+
+<p>cout &lt;&lt; "And it's place is:" ;</p>
+
+<p>for (i = 0;i &lt; sum;i++)</p>
+
+<p>{</p>
+
+<p>if (addr[i] == narry[sum - kk])</p>
+
+<p>cout &lt;&lt; i &lt;&lt; '\t';</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>return0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t88"></a><a name="t88"></a><a name="t87"></a><strong>5、两路归并排序&nbsp;&nbsp;&nbsp;&nbsp;好 比较简短</strong></h2>
+
+<p>Linklist *unio(Linklist *p,Linklist *q){</p>
+
+<p>linklist *R,*pa,*qa,*ra;</p>
+
+<p>pa=p;</p>
+
+<p>qa=q;</p>
+
+<p>R=ra=p;</p>
+
+<p>while(pa-&gt;next!=NULL&amp;&amp;qa-&gt;next!=NULL){</p>
+
+<p>if(pa-&gt;data&gt;qa-&gt;data){</p>
+
+<p>ra-&gt;next=qa;</p>
+
+<p>qa=qa-&gt;next;</p>
+
+<p>}</p>
+
+<p>else{</p>
+
+<p>ra-&gt;next=pa;</p>
+
+<p>pa=pa-&gt;next;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>if(pa-&gt;next!=NULL)</p>
+
+<p>ra-&gt;next=pa;</p>
+
+<p>if(qa-&gt;next!=NULL)</p>
+
+<p>ra-&gt;next==qa;</p>
+
+<p>return R;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t89"></a><a name="t89"></a><a name="t88"></a><strong>6、用递归算法判断数组a[N]是否为一个递增数组。</strong></h2>
+
+<p>递归的方法，记录当前最大的，并且判断当前的是否比这个还大，大则继续，否则返回false结束：</p>
+
+<p>bool fun( int a[], int n )</p>
+
+<p>{</p>
+
+<p>if( n==1 )</p>
+
+<p>return true;</p>
+
+<p>if( n==2 )</p>
+
+<p>return a[n-1] &gt;= a[n-2];</p>
+
+<p>return fun( a,n-1) &amp;&amp; ( a[n-1] &gt;= a[n-2] );</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t90"></a><a name="t90"></a><a name="t89"></a><strong>7、单连表的建立，把'a'--'z'26个字母插入到连表中，并且倒叙，还要打印！</strong></h2>
+
+<p>方法1：</p>
+
+<p>typedef struct val</p>
+
+<p>{ &nbsp;&nbsp;int date_1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;struct val *next;</p>
+
+<p>}*p;</p>
+
+<p>&nbsp;</p>
+
+<p>void main(void)</p>
+
+<p>{ &nbsp;&nbsp;char c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(c=122;c&gt;=97;c--)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ p.date=c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p=p-&gt;next;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;p.next=NULL;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>方法2：</p>
+
+<p>node *p = NULL;</p>
+
+<p>node *q = NULL;</p>
+
+<p>&nbsp;</p>
+
+<p>node *head = (node*)malloc(sizeof(node));</p>
+
+<p>head-&gt;data = ' ';head-&gt;next=NULL;</p>
+
+<p>&nbsp;</p>
+
+<p>node *first = (node*)malloc(sizeof(node));</p>
+
+<p>first-&gt;data = 'a';first-&gt;next=NULL;head-&gt;next = first;</p>
+
+<p>p = first;</p>
+
+<p>&nbsp;</p>
+
+<p>int longth = 'z' - 'b';</p>
+
+<p>int i=0;</p>
+
+<p>while ( i&lt;=longth )</p>
+
+<p>{</p>
+
+<p>node *temp = (node*)malloc(sizeof(node));</p>
+
+<p>temp-&gt;data = 'b'+i;temp-&gt;next=NULL;q=temp;</p>
+
+<p>&nbsp;</p>
+
+<p>head-&gt;next = temp; temp-&gt;next=p;p=q;</p>
+
+<p>i++;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>print(head);</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t91"></a><a name="t91"></a><a name="t90"></a><strong>8、请列举一个软件中时间换空间或者空间换时间的例子。</strong></h2>
+
+<p>void swap(int a,int b)</p>
+
+<p>{</p>
+
+<p>int c; c=a;a=b;b=a;</p>
+
+<p>}</p>
+
+<p>---&gt;空优</p>
+
+<p>void swap(int a,int b)</p>
+
+<p>{</p>
+
+<p>a=a+b;b=a-b;a=a-b;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t92"></a><a name="t92"></a><a name="t91"></a><strong>9、outputstr所指的值为123456789</strong></h2>
+
+<p>int continumax(char *outputstr, char *inputstr)</p>
+
+<p>{</p>
+
+<p>char *in = inputstr, *out = outputstr, *temp, *final;</p>
+
+<p>int count = 0, maxlen = 0;</p>
+
+<p>&nbsp;</p>
+
+<p>while( *in != '\0' )</p>
+
+<p>{</p>
+
+<p>if( *in &gt; 47 &amp;&amp; *in &lt; 58 )</p>
+
+<p>{</p>
+
+<p>for(temp = in; *in &gt; 47 &amp;&amp; *in &lt; 58 ; in++ )</p>
+
+<p>count++;</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>in++;</p>
+
+<p>&nbsp;</p>
+
+<p>if( maxlen &lt; count )</p>
+
+<p>{</p>
+
+<p>maxlen = count;</p>
+
+<p>count = 0;</p>
+
+<p>final = temp;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>for(int i = 0; i &lt; maxlen; i++)</p>
+
+<p>{</p>
+
+<p>*out = *final;</p>
+
+<p>out++;</p>
+
+<p>final++;</p>
+
+<p>}</p>
+
+<p>*out = '\0';</p>
+
+<p>return maxlen;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t93"></a><a name="t93"></a><a name="t92"></a><strong>10、不用库函数,用C语言实现将一整型数字转化为字符串</strong></h2>
+
+<p>方法1：</p>
+
+<p>int getlen(char *s){</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int n;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(n = 0; *s != '\0'; s++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return n;</p>
+
+<p>}</p>
+
+<p>void reverse(char s[])</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;int c,i,j;</p>
+
+<p>&nbsp;&nbsp;&nbsp;for(i = 0,j = getlen(s) - 1; i &lt; j; i++,j--){</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c = s[i];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s[i] = s[j];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s[j] = c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>}</p>
+
+<p>void itoa(int n,char s[])</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;int i,sign;</p>
+
+<p>&nbsp;&nbsp;&nbsp;if((sign = n) &lt; 0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = -n;</p>
+
+<p>&nbsp;&nbsp;&nbsp;i = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;do{/*以反序生成数字*/</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s[i++] =&nbsp;n%10 + '0';/*get next number*/</p>
+
+<p>&nbsp;&nbsp;&nbsp;}while((n /= 10) &gt; 0);/*delete the number*/</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;if(sign &lt; 0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s[i++] = '-';</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;s[i] = '\0';</p>
+
+<p>&nbsp;&nbsp;&nbsp;reverse(s);</p>
+
+<p>}</p>
+
+<p>方法2:</p>
+
+<p>#include &lt;iostream&gt;</p>
+
+<p>using namespace std;</p>
+
+<p>&nbsp;</p>
+
+<p>void itochar(int num);</p>
+
+<p>&nbsp;</p>
+
+<p>void itochar(int num)</p>
+
+<p>{</p>
+
+<p>int i = 0;</p>
+
+<p>int j ;</p>
+
+<p>char stra[10];</p>
+
+<p>char strb[10];</p>
+
+<p>while ( num )</p>
+
+<p>{</p>
+
+<p>stra[i++]=num%10+48;&nbsp;&nbsp;//+48和+‘0’一样</p>
+
+<p>num=num/10;</p>
+
+<p>}</p>
+
+<p>stra[i] = '\0';</p>
+
+<p>for( j=0; j &lt; i; j++)</p>
+
+<p>{</p>
+
+<p>strb[j] = stra[i-j-1];</p>
+
+<p>}</p>
+
+<p>strb[j] = '\0';</p>
+
+<p>cout&lt;&lt;strb&lt;&lt;endl;</p>
+
+<p>&nbsp;</p>
+
+<p>}</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>int num;</p>
+
+<p>cin&gt;&gt;num;</p>
+
+<p>itochar(num);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t94"></a><a name="t94"></a><a name="t93"></a><strong>11、求组合数： 求n个数（1....n）中k个数的组合....</strong></h2>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如：combination(5,3)</p>
+
+<p>&nbsp;&nbsp;要求输出：543，542，541，532，531，521，432，431，421，321，</p>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>int pop(int *);</p>
+
+<p>int push(int );</p>
+
+<p>void combination(int ,int );</p>
+
+<p>&nbsp;</p>
+
+<p>int stack[3]={0};</p>
+
+<p>top=-1;</p>
+
+<p>&nbsp;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>int n,m;</p>
+
+<p>printf("Input two numbers:\n");</p>
+
+<p>while( (2!=scanf("%d%*c%d",&amp;n,&amp;m)) )</p>
+
+<p>{</p>
+
+<p>fflush(stdin);</p>
+
+<p>printf("Input error! Again:\n");</p>
+
+<p>}</p>
+
+<p>combination(n,m);</p>
+
+<p>printf("\n");</p>
+
+<p>}</p>
+
+<p>void combination(int m,int n)</p>
+
+<p>{</p>
+
+<p>int temp=m;</p>
+
+<p>push(temp);</p>
+
+<p>while(1)</p>
+
+<p>{</p>
+
+<p>if(1==temp)</p>
+
+<p>{</p>
+
+<p>if(pop(&amp;temp)&amp;&amp;stack[0]==n) //当栈底元素弹出&amp;&amp;为可能取的最小值，循环退出</p>
+
+<p>break;</p>
+
+<p>}</p>
+
+<p>else if( push(--temp))</p>
+
+<p>{</p>
+
+<p>printf("%d%d%d &nbsp;",stack[0],stack[1],stack[2]);//§ä¨ì¤@?</p>
+
+<p>pop(&amp;temp);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>int push(int i)</p>
+
+<p>{</p>
+
+<p>stack[++top]=i;</p>
+
+<p>if(top&lt;2)</p>
+
+<p>return 0;</p>
+
+<p>else</p>
+
+<p>return 1;</p>
+
+<p>}</p>
+
+<p>int pop(int *i)</p>
+
+<p>{</p>
+
+<p>*i=stack[top--];</p>
+
+<p>if(top&gt;=0)</p>
+
+<p>return 0;</p>
+
+<p>else</p>
+
+<p>return 1;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t95"></a><a name="t95"></a><a name="t94"></a><strong>12、用指针的方法，将字符串“ABCD1234efgh”前后对调显示</strong></h2>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;string.h&gt;</p>
+
+<p>#include &lt;dos.h&gt;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char str[] = "ABCD1234efgh";</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int length = strlen(str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char * p1 = str;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;char * p2 = str + length - 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while(p1 &lt; p2)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char c = *p1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*p1 = *p2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*p2 = c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++p1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--p2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("str now is %s\n",str);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;system("pause");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t96"></a><a name="t96"></a><a name="t95"></a><strong>13、有一分数序列：1/2,1/4,1/6,1/8……，用函数调用的方法，求此数列前20项的和</strong></h2>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>double getValue()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;double result = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int i = 2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while(i &lt; 42)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += 1.0 / i;//一定要使用1.0做除数，不能用1，否则结果将自动转化成整数，即0.000000</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 2;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return result;</p>
+
+<p>}</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("result is %f\n", getValue());</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;system("pause");</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t97"></a><a name="t97"></a><a name="t96"></a><strong>14、有一个数组a[1000]存放0--1000;要求每隔二个数删掉一个数，到末尾时循环至开头继续进行，求最后一个被删掉的数的原始下标位置。</strong></h2>
+
+<p>以7个数为例：</p>
+
+<p>&nbsp;&nbsp;&nbsp;{0,1,2,3,4,5,6,7} 0--&gt;1--&gt;2（删除）--&gt;3--&gt;4--&gt;5(删除)--&gt;6--&gt;7--&gt;0（删除），如此循环直到最后一个数被删除。</p>
+
+<p>方法1：数组</p>
+
+<p>#include &lt;iostream&gt;</p>
+
+<p>using namespace std;</p>
+
+<p>#define null 1000</p>
+
+<p>&nbsp;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>int arr[1000];</p>
+
+<p>for (int i=0;i&lt;1000;++i)</p>
+
+<p>arr[i]=i;</p>
+
+<p>int j=0;</p>
+
+<p>int count=0;</p>
+
+<p>while(count&lt;999)</p>
+
+<p>{</p>
+
+<p>while(arr[j%1000]==null)</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>while(arr[j%1000]==null)</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>while(arr[j%1000]==null)</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>arr[j]=null;</p>
+
+<p>++count;</p>
+
+<p>}</p>
+
+<p>while(arr[j]==null)</p>
+
+<p>j=(++j)%1000;</p>
+
+<p>&nbsp;</p>
+
+<p>cout&lt;&lt;j&lt;&lt;endl;</p>
+
+<p>return 0;</p>
+
+<p>}方法2：链表</p>
+
+<p>#include&lt;iostream&gt;</p>
+
+<p>using namespace std;</p>
+
+<p>#define null 0</p>
+
+<p>struct node</p>
+
+<p>{</p>
+
+<p>int data;</p>
+
+<p>node* next;</p>
+
+<p>};</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>node* head=new node;</p>
+
+<p>head-&gt;data=0;</p>
+
+<p>head-&gt;next=null;</p>
+
+<p>node* p=head;</p>
+
+<p>for(int i=1;i&lt;1000;i++)</p>
+
+<p>{</p>
+
+<p>node* tmp=new node;</p>
+
+<p>tmp-&gt;data=i;</p>
+
+<p>tmp-&gt;next=null;</p>
+
+<p>head-&gt;next=tmp;</p>
+
+<p>head=head-&gt;next;</p>
+
+<p>}</p>
+
+<p>head-&gt;next=p;</p>
+
+<p>while(p!=p-&gt;next)</p>
+
+<p>{</p>
+
+<p>p-&gt;next-&gt;next=p-&gt;next-&gt;next-&gt;next;</p>
+
+<p>p=p-&gt;next-&gt;next;</p>
+
+<p>}</p>
+
+<p>cout&lt;&lt;p-&gt;data;</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>方法3：通用算法</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#define MAXLINE 1000 &nbsp;&nbsp;//元素个数</p>
+
+<p>/*</p>
+
+<p>MAXLINE &nbsp;&nbsp;元素个数</p>
+
+<p>a[] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元素数组</p>
+
+<p>R[] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指针场</p>
+
+<p>suffix &nbsp;&nbsp;&nbsp;下标</p>
+
+<p>index &nbsp;&nbsp;&nbsp;&nbsp;返回最后的下标序号</p>
+
+<p>values &nbsp;&nbsp;&nbsp;返回最后的下标对应的值</p>
+
+<p>start &nbsp;&nbsp;&nbsp;&nbsp;从第几个开始</p>
+
+<p>K &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间隔</p>
+
+<p>*/</p>
+
+<p>int find_n(int a[],int R[],int K,int&amp; index,int&amp; values,int s=0) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;int suffix;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int front_node,current_node;</p>
+
+<p>&nbsp;&nbsp;&nbsp;suffix=0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(s==0) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_node=0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;front_node=MAXLINE-1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_node=s;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;front_node=s-1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(R[front_node]!=front_node) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d\n",a[current_node]);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R[front_node]=R[current_node];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(K==1) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_node=R[front_node];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i=0;i&lt;K;i++){</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;front_node=R[front_node];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_node=R[front_node];</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;index=front_node;</p>
+
+<p>&nbsp;values=a[front_node];</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>int main(void) {</p>
+
+<p>int a[MAXLINE],R[MAXLINE],suffix,index,values,start,i,K;</p>
+
+<p>suffix=index=values=start=0;</p>
+
+<p>K=2;</p>
+
+<p>&nbsp;</p>
+
+<p>for(i=0;i&lt;MAXLINE;i++) {</p>
+
+<p>a[i]=i;</p>
+
+<p>R[i]=i+1;</p>
+
+<p>}</p>
+
+<p>R[i-1]=0;</p>
+
+<p>find_n(a,R,K,index,values,2);</p>
+
+<p>printf("the value is %d,%d\n",index,values);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t98"></a><a name="t98"></a><a name="t97"></a><strong>15、实现strcmp</strong></h2>
+
+<p>int StrCmp(const char *str1, const char *str2)</p>
+
+<p>做是做对了，没有抄搞，比较乱</p>
+
+<p>int StrCmp(const char *str1, const char *str2)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;assert(str1 &amp;&amp; srt2);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while (*str1 &amp;&amp; *str2 &amp;&amp; *str1 == *str2) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str1++, str2++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if (*str1 &amp;&amp; *str2)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (*str1-*str2);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;elseif (*str1 &amp;&amp; *str2==0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;elseif (*str1 = = 0 &amp;&amp; *str2)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return -1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;else</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>int StrCmp(const char *str1, const char *str2)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//省略判断空指针(自己保证)</p>
+
+<p>while(*str1 &amp;&amp; *str1++ = = *str2++);</p>
+
+<p>return *str1-*str2;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t99"></a><a name="t99"></a><a name="t98"></a><strong>16、实现子串定位</strong></h2>
+
+<p>int FindSubStr(const char *MainStr, const char *SubStr)</p>
+
+<p>做是做对了，没有抄搞，比较乱</p>
+
+<p>int MyStrstr(const char* MainStr, const char* SubStr)</p>
+
+<p>{</p>
+
+<p>const char *p;</p>
+
+<p>const char *q;</p>
+
+<p>const char * u = MainStr;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>//assert((MainStr!=NULL)&amp;&amp;( SubStr!=NULL));//用断言对输入进行判断</p>
+
+<p>while(*MainStr) //内部进行递增</p>
+
+<p>{</p>
+
+<p>p = MainStr;</p>
+
+<p>q = SubStr;</p>
+
+<p>while(*q &amp;&amp; *p &amp;&amp; *p++ == *q++);</p>
+
+<p>if(!*q )</p>
+
+<p>{</p>
+
+<p>return MainStr - u +1 ;//MainStr指向当前起始位，u指向</p>
+
+<p>}</p>
+
+<p>MainStr ++;</p>
+
+<p>}</p>
+
+<p>return -1;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t100"></a><a name="t100"></a><a name="t99"></a><strong>17、已知一个单向链表的头，请写出删除其某一个结点的算法，要求，先找到此结点，然后删除。</strong></h2>
+
+<p>slnodetype *Delete(slnodetype *Head,int key){}中if(Head-&gt;number==key)</p>
+
+<p>{</p>
+
+<p>Head=Pointer-&gt;next;</p>
+
+<p>free(Pointer);</p>
+
+<p>break;</p>
+
+<p>}</p>
+
+<p>Back = Pointer;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pointer=Pointer-&gt;next;</p>
+
+<p>if(Pointer-&gt;number==key)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back-&gt;next=Pointer-&gt;next;</p>
+
+<p>free(Pointer);</p>
+
+<p>break;</p>
+
+<p>}</p>
+
+<p>void delete(Node* p)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if(Head = Node)</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while(p)</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t101"></a><a name="t101"></a><a name="t100"></a><strong>18、有1,2,....一直到n的无序数组,求排序算法,并且要求时间复杂度为O(n),空间复杂度O(1),使用交换,而且一次只能交换两个数.（华为）</strong></h2>
+
+<p>#include&lt;iostream.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int a[] &nbsp;= {10,6,9,5,2,8,4,7,1,3};</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int len = sizeof(a) / sizeof(int);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int temp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; len; )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>temp = a[a[i] - 1];</p>
+
+<p>a[a[i] - 1] = a[i];</p>
+
+<p>a[i] = temp;</p>
+
+<p>&nbsp;</p>
+
+<p>if ( a[i] == i + 1)</p>
+
+<p>&nbsp;&nbsp;i++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j &lt; len; j++)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;a[j]&lt;&lt;",";</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t102"></a><a name="t102"></a><a name="t101"></a><strong>19、写出程序把一个链表中的接点顺序倒排</strong></h2>
+
+<p>typedef struct linknode</p>
+
+<p>{</p>
+
+<p>int data;</p>
+
+<p>struct linknode *next;</p>
+
+<p>}node;</p>
+
+<p>//将一个链表逆置</p>
+
+<p>node *reverse(node *head)</p>
+
+<p>{</p>
+
+<p>node *p,*q,*r;</p>
+
+<p>p=head;</p>
+
+<p>q=p-&gt;next;</p>
+
+<p>while(q!=NULL)</p>
+
+<p>{</p>
+
+<p>r=q-&gt;next;</p>
+
+<p>q-&gt;next=p;</p>
+
+<p>p=q;</p>
+
+<p>q=r;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>head-&gt;next=NULL;</p>
+
+<p>head=p;</p>
+
+<p>return head;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t103"></a><a name="t103"></a><a name="t102"></a><strong>20、写出程序删除链表中的所有接点</strong></h2>
+
+<p>void del_all(node *head)</p>
+
+<p>{</p>
+
+<p>node *p;</p>
+
+<p>while(head!=NULL)</p>
+
+<p>{</p>
+
+<p>p=head-&gt;next;</p>
+
+<p>free(head);</p>
+
+<p>head=p;</p>
+
+<p>}</p>
+
+<p>cout&lt;&lt;"释放空间成功!"&lt;&lt;endl;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t104"></a><a name="t104"></a><a name="t103"></a><strong>21、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串</strong></h2>
+
+<p>void insert(char *s, char *t, int i)</p>
+
+<p>{</p>
+
+<p>char *q = t;</p>
+
+<p>char *p =s;</p>
+
+<p>if(q == NULL)return;</p>
+
+<p>while(*p!='\0')</p>
+
+<p>{</p>
+
+<p>p++;</p>
+
+<p>}</p>
+
+<p>while(*q!=0)</p>
+
+<p>{</p>
+
+<p>*p=*q;</p>
+
+<p>p++;</p>
+
+<p>q++;</p>
+
+<p>}</p>
+
+<p>*p = '\0';</p>
+
+<p>}</p>
+
+<h2><a name="t105"></a><a name="t105"></a><strong>&nbsp;</strong></h2>
+
+<h2><a name="t106"></a><a name="t106"></a><a name="t105"></a><strong>22、写一个函数，功能：完成内存之间的拷贝</strong></h2>
+
+<p>memcpy source code:</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;270 void* memcpy( void *dst, const void *src, unsigned int len )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;271 {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;272 &nbsp;&nbsp;&nbsp;register char *d;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;273 &nbsp;&nbsp;&nbsp;register char *s;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;27</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;275 &nbsp;&nbsp;&nbsp;if (len == 0)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;276 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return dst;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;277</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;278 &nbsp;&nbsp;&nbsp;if (is_overlap(dst, src, len, len))</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;279 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complain3("memcpy", dst, src, len);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;280</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;281 &nbsp;&nbsp;&nbsp;if ( dst &gt; src ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;282 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d = (char *)dst + len - 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;283 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = (char *)src + len - 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ( len &gt;= 4 ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;285 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d-- = *s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;286 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d-- = *s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;287 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d-- = *s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;288 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d-- = *s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;289 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;len -= 4;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;290 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;291 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ( len-- ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;292 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d-- = *s--;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;293 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;294 &nbsp;&nbsp;&nbsp;} else if ( dst &lt; src ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;295 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d = (char *)dst;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;296 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = (char *)src;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;297 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ( len &gt;= 4 ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;298 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++ = *s++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;299 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++ = *s++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;300 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++ = *s++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;301 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++ = *s++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;302 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;len -= 4;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;303 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;304 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ( len-- ) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;305 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*d++ = *s++;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;307 &nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;308 &nbsp;&nbsp;&nbsp;return dst;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;309 }</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t107"></a><a name="t107"></a><a name="t106"></a><strong>23、公司考试这种题目主要考你编写的代码是否考虑到各种情况，是否安全（不会溢出）</strong></h2>
+
+<p><strong>各种情况包括：</strong></p>
+
+<p>１、参数是指针，检查指针是否有效</p>
+
+<p>２、检查复制的源目标和目的地是否为同一个，若为同一个，则直接跳出</p>
+
+<p>３、读写权限检查</p>
+
+<p>４、安全检查，是否会溢出</p>
+
+<p>memcpy拷贝一块内存，内存的大小你告诉它</p>
+
+<p>strcpy是字符串拷贝，遇到'\0'结束</p>
+
+<p>&nbsp;</p>
+
+<p>/* memcpy ───&nbsp;拷贝不重叠的内存块&nbsp;*/ &nbsp;</p>
+
+<p>void memcpy(void* pvTo, void* pvFrom, size_t size)</p>
+
+<p>{</p>
+
+<p>void* pbTo = (byte*)pvTo;</p>
+
+<p>void* pbFrom = (byte*)pvFrom;</p>
+
+<p>ASSERT(pvTo != NULL &amp;&amp; pvFrom != NULL); //检查输入指针的有效性</p>
+
+<p>ASSERT(pbTo&gt;=pbFrom+size || pbFrom&gt;=pbTo+size);//检查两个指针指向的内存是否重叠</p>
+
+<p>while(size--&gt;0)</p>
+
+<p>*pbTo++ == *pbFrom++;</p>
+
+<p>return(pvTo);</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t108"></a><a name="t108"></a><a name="t107"></a><strong>24、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串</strong></h2>
+
+<p>void insert(char *s, char *t, int i)</p>
+
+<p>{</p>
+
+<p>memcpy(&amp;s[strlen(t)+i],&amp;s[i],strlen(s)-i);</p>
+
+<p>memcpy(&amp;s[i],t,strlen(t));</p>
+
+<p>s[strlen(s)+strlen(t)]='\0';</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t109"></a><a name="t109"></a><a name="t108"></a><strong>25、在一个字符串中找到可能的最长的子字符串，且该字符串是由同一字符组成的。</strong></h2>
+
+<p>char * search(char *cpSource, char ch)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char *cpTemp=NULL, *cpDest=NULL;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int iTemp, iCount=0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(*cpSource)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(*cpSource == ch)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iTemp = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cpTemp = cpSource;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(*cpSource == ch)</p>
+
+<p>++iTemp, ++cpSource;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(iTemp &gt; iCount)</p>
+
+<p>iCount = iTemp, cpDest = cpTemp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!*cpSource)</p>
+
+<p>break;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++cpSource;</p>
+
+<p>&nbsp;}</p>
+
+<p>&nbsp;return cpDest;</p>
+
+<p>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t110"></a><a name="t110"></a><a name="t109"></a><strong>26、在给定的内存区域搜索给定的字符，并返回该字符所在位置索引值。</strong></h2>
+
+<p>int search(char *cpSource, int n, char ch)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0; i&lt;n &amp;&amp; *(cpSource+i) != ch; ++i);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return i;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t111"></a><a name="t111"></a><a name="t110"></a><strong>27、给定字符串A和B,输出A和B中的最大公共子串。</strong></h2>
+
+<p>比如A="aocdfe" B="pmcdfa"&nbsp;则输出"cdf"</p>
+
+<p>*/</p>
+
+<p>//Author: azhen</p>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>#include&lt;stdlib.h&gt;</p>
+
+<p>#include&lt;string.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>char *commanstring(char shortstring[], char longstring[])</p>
+
+<p>{</p>
+
+<p>int i, j;</p>
+
+<p>&nbsp;</p>
+
+<p>char *substring=malloc(256);</p>
+
+<p>&nbsp;</p>
+
+<p>if(strstr(longstring, shortstring)!=NULL) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//如果……，那么返回shortstring</p>
+
+<p>return shortstring; &nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>for(i=strlen(shortstring)-1;i&gt;0; i--) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//否则，开始循环计算</p>
+
+<p>{</p>
+
+<p>for(j=0; j&lt;=strlen(shortstring)-i; j++){</p>
+
+<p>memcpy(substring, &amp;shortstring[j], i);</p>
+
+<p>substring[i]='\0';</p>
+
+<p>if(strstr(longstring, substring)!=NULL)</p>
+
+<p>return substring;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>return NULL;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>main()</p>
+
+<p>{</p>
+
+<p>char *str1=malloc(256);</p>
+
+<p>char *str2=malloc(256);</p>
+
+<p>char *comman=NULL;</p>
+
+<p>&nbsp;</p>
+
+<p>gets(str1);</p>
+
+<p>gets(str2);</p>
+
+<p>&nbsp;</p>
+
+<p>if(strlen(str1)&gt;strlen(str2)) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//将短的字符串放前面</p>
+
+<p>comman=commanstring(str2, str1);</p>
+
+<p>else</p>
+
+<p>comman=commanstring(str1, str2);</p>
+
+<p>&nbsp;</p>
+
+<p>printf("the longest comman string is: %s\n", comman);</p>
+
+<p>}</p>
+
+<h2><a name="t112"></a><a name="t112"></a><a name="t111"></a><strong>28、写一个函数比较两个字符串str1和str2的大小，若相等返回0，若str1大于</strong></h2>
+
+<p>str2返回1，若str1小于str2返回－1</p>
+
+<p>int strcmp ( const char * src,const char * dst)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int ret = 0 ;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while( ! (ret = *(unsigned char *)src - *(unsigned char *)dst) &amp;&amp; *dst)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++src;</p>
+
+<p>++dst;</p>
+
+<p>}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( ret &lt; 0 )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ret = -1 ;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if ( ret &gt; 0 )</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ret = 1 ;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return( ret );</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t113"></a><a name="t113"></a><a name="t112"></a><strong>29、求1000！的未尾有几个0（用素数相乘的方法来做，如72=2*2*2*3*3）;</strong></h2>
+
+<p>求出1-&gt;1000里,能被5整除的数的个数n1,能被25整除的数的个数n2,能被125整除的数的个数n3,</p>
+
+<p>能被625整除的数的个数n4.</p>
+
+<p>1000!末尾的零的个数=n1+n2+n3+n4;</p>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>#define NUM 1000</p>
+
+<p>&nbsp;</p>
+
+<p>int find5(int num){</p>
+
+<p>int ret=0;</p>
+
+<p>while(num%5==0){</p>
+
+<p>num/=5;</p>
+
+<p>ret++;</p>
+
+<p>}</p>
+
+<p>return ret;</p>
+
+<p>}</p>
+
+<p>int main(){</p>
+
+<p>int result=0;</p>
+
+<p>int i;</p>
+
+<p>for(i=5;i&lt;=NUM;i+=5)</p>
+
+<p>{</p>
+
+<p>result+=find5(i);</p>
+
+<p>}</p>
+
+<p>printf(" the total zero number is %d\n",result);</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t114"></a><a name="t114"></a><a name="t113"></a><strong>30、有双向循环链表结点定义为：&nbsp;</strong></h2>
+
+<p>struct node</p>
+
+<p>{ int data;</p>
+
+<p>struct node *front,*next;</p>
+
+<p>};</p>
+
+<p>有两个双向循环链表A，B，知道其头指针为：pHeadA,pHeadB，请写一函数将两链表中data值相同的结点删除</p>
+
+<p>BOOL DeteleNode(Node *pHeader, DataType Value)</p>
+
+<p>{</p>
+
+<p>if (pHeader == NULL) return;</p>
+
+<p>&nbsp;</p>
+
+<p>BOOL bRet = FALSE;</p>
+
+<p>Node *pNode = pHead;</p>
+
+<p>while (pNode != NULL)</p>
+
+<p>{</p>
+
+<p>if (pNode-&gt;data == Value)</p>
+
+<p>{</p>
+
+<p>if (pNode-&gt;front == NULL)</p>
+
+<p>{</p>
+
+<p>pHeader = pNode-&gt;next;</p>
+
+<p>pHeader-&gt;front = NULL;</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>if (pNode-&gt;next != NULL)</p>
+
+<p>{</p>
+
+<p>pNode-&gt;next-&gt;front = pNode-&gt;front;</p>
+
+<p>}</p>
+
+<p>pNode-&gt;front-&gt;next = pNode-&gt;next;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>Node *pNextNode = pNode-&gt;next;</p>
+
+<p>delete pNode;</p>
+
+<p>pNode = pNextNode;</p>
+
+<p>&nbsp;</p>
+
+<p>bRet = TRUE;</p>
+
+<p>//不要break或return,&nbsp;删除所有</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>pNode = pNode-&gt;next;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>return bRet;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>void DE(Node *pHeadA, Node *pHeadB)</p>
+
+<p>{</p>
+
+<p>if (pHeadA == NULL || pHeadB == NULL)</p>
+
+<p>{</p>
+
+<p>return;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>Node *pNode = pHeadA;</p>
+
+<p>while (pNode != NULL)</p>
+
+<p>{</p>
+
+<p>if (DeteleNode(pHeadB, pNode-&gt;data))</p>
+
+<p>{</p>
+
+<p>if (pNode-&gt;front == NULL)</p>
+
+<p>{</p>
+
+<p>pHeadA = pNode-&gt;next;</p>
+
+<p>pHeadA-&gt;front = NULL;</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>pNode-&gt;front-&gt;next = pNode-&gt;next;</p>
+
+<p>if (pNode-&gt;next != NULL)</p>
+
+<p>{</p>
+
+<p>pNode-&gt;next-&gt;front = pNode-&gt;front;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>Node *pNextNode = pNode-&gt;next;</p>
+
+<p>delete pNode;</p>
+
+<p>pNode = pNextNode;</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>pNode = pNode-&gt;next;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t115"></a><a name="t115"></a><a name="t114"></a><strong>31、编程实现：找出两个字符串中最大公共子字符串,如"abccade","dgcadde"的最大子串为"cad"&nbsp;</strong></h2>
+
+<p>int GetCommon(char *s1, char *s2, char **r1, char **r2)</p>
+
+<p>{</p>
+
+<p>int len1 = strlen(s1);</p>
+
+<p>int len2 = strlen(s2);</p>
+
+<p>int maxlen = 0;</p>
+
+<p>&nbsp;</p>
+
+<p>for(int i = 0; i &lt; len1; i++)</p>
+
+<p>{</p>
+
+<p>for(int j = 0; j &lt; len2; j++)</p>
+
+<p>{</p>
+
+<p>if(s1[i] == s2[j])</p>
+
+<p>{</p>
+
+<p>int as = i, bs = j, count = 1;</p>
+
+<p>while(as + 1 &lt; len1 &amp;&amp; bs + 1 &lt; len2 &amp;&amp; s1[++as] == s2[++bs])</p>
+
+<p>count++;</p>
+
+<p>&nbsp;</p>
+
+<p>if(count &gt; maxlen)</p>
+
+<p>{</p>
+
+<p>maxlen = count;</p>
+
+<p>*r1 = s1 + i;</p>
+
+<p>*r2 = s2 + j;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t116"></a><a name="t116"></a><a name="t115"></a><strong>32、编程实现：把十进制数(long型)分别以二进制和十六进制形式输出，不能使用printf系列库函数</strong></h2>
+
+<p>char* test3(long num) {</p>
+
+<p>char* buffer = (char*)malloc(11);</p>
+
+<p>buffer[0] = '0';</p>
+
+<p>buffer[1] = 'x';</p>
+
+<p>buffer[10] = '\0';</p>
+
+<p>&nbsp;</p>
+
+<p>char* temp = buffer + 2;</p>
+
+<p>for (int i=0; i &lt; 8; i++) {</p>
+
+<p>temp[i] = (char)(num&lt;&lt;4*i&gt;&gt;28);</p>
+
+<p>temp[i] = temp[i] &gt;= 0 ? temp[i] : temp[i] + 16;</p>
+
+<p>temp[i] = temp[i] &lt; 10 ? temp[i] + 48 : temp[i] + 55;</p>
+
+<p>}</p>
+
+<p>return buffer;</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t117"></a><a name="t117"></a><a name="t116"></a><strong>33、输入N,&nbsp;打印&nbsp;N*N&nbsp;矩阵</strong></h2>
+
+<p>比如&nbsp;N = 3，打印：</p>
+
+<p>&nbsp;</p>
+
+<p>1 &nbsp;2 &nbsp;3</p>
+
+<p>8 &nbsp;9 &nbsp;4</p>
+
+<p>7 &nbsp;6 &nbsp;5</p>
+
+<p>&nbsp;</p>
+
+<p>N = 4，打印：</p>
+
+<p>&nbsp;</p>
+
+<p>1 &nbsp;&nbsp;2 &nbsp;&nbsp;3 &nbsp;&nbsp;4</p>
+
+<p>12 &nbsp;13 &nbsp;14 &nbsp;5</p>
+
+<p>11 &nbsp;16 &nbsp;15 &nbsp;6</p>
+
+<p>10 &nbsp;9 &nbsp;&nbsp;8 &nbsp;&nbsp;7</p>
+
+<p>解答：</p>
+
+<p>1 #define N 15</p>
+
+<p>int s[N][N];</p>
+
+<p>void main()</p>
+
+<p>{</p>
+
+<p>int k = 0, i = 0, j = 0;</p>
+
+<p>int a = 1;</p>
+
+<p>for( ; k &lt; (N+1)/2; k++ )</p>
+
+<p>{</p>
+
+<p>while( j &lt; N-k ) s[i][j++] = a++; i++; j--;</p>
+
+<p>while( i &lt; N-k ) s[i++][j] = a++; i--; j--;</p>
+
+<p>while( j &gt; k-1 ) s[i][j--] = a++; i--; j++;</p>
+
+<p>while( i &gt; k ) &nbsp;&nbsp;s[i--][j] = a++; i++; j++;</p>
+
+<p>}</p>
+
+<p>for( i = 0; i &lt; N; i++ )</p>
+
+<p>{</p>
+
+<p>for( j = 0; j &lt; N; j++ )</p>
+
+<p>cout &lt;&lt; s[i][j] &lt;&lt; '\t';</p>
+
+<p>cout &lt;&lt; endl;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>2 define MAX_N &nbsp;100</p>
+
+<p>int matrix[MAX_N][MAX_N];</p>
+
+<p>&nbsp;</p>
+
+<p>/*</p>
+
+<p>&nbsp;*（x,y）：第一个元素的坐标</p>
+
+<p>&nbsp;* start：第一个元素的值</p>
+
+<p>&nbsp;* n：矩阵的大小</p>
+
+<p>&nbsp;*/</p>
+
+<p>void SetMatrix(int x, int y, int start, int n) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int i, j;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if (n &lt;= 0) &nbsp;&nbsp;&nbsp;//递归结束条件</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;if (n == 1) { &nbsp;//矩阵大小为1时</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix[x][y] = start;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (i = x; i &lt; x + n-1; i++) &nbsp;&nbsp;//矩阵上部</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix[y][i] = start++;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (j = y; j &lt; y + n-1; j++) &nbsp;&nbsp;//右部</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix[j][x+n-1] = start++;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (i = x+n-1; i &gt; x; i--) &nbsp;&nbsp;&nbsp;&nbsp;//底部</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix[y+n-1][i] = start++;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (j = y+n-1; j &gt; y; j--) &nbsp;&nbsp;&nbsp;&nbsp;//左部</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix[j][x] = start++;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;SetMatrix(x+1, y+1, start, n-2); &nbsp;&nbsp;//递归</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p>void main() {</p>
+
+<p>&nbsp;&nbsp;&nbsp;int i, j;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int n;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;scanf("%d", &amp;n);</p>
+
+<p>&nbsp;&nbsp;&nbsp;SetMatrix(0, 0, 1, n);</p>
+
+<p>&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;//打印螺旋矩阵</p>
+
+<p>&nbsp;&nbsp;&nbsp;for(i = 0; i &lt; n; i++) {</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j &lt; n; j++)</p>
+
+<p>printf("%4d", matrix[i][j]);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("\n");</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>}</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t118"></a><a name="t118"></a><a name="t117"></a><strong>34、斐波拉契数列递归实现的方法如下：</strong></h2>
+
+<p>&nbsp;int &nbsp;Funct( int n )</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;if(n==0) return 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;if(n==1) return 1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;retrurn &nbsp;Funct(n-1) + Funct(n-2);</p>
+
+<p>}</p>
+
+<p>请问，如何不使用递归，来实现上述函数？</p>
+
+<p>请教各位高手！</p>
+
+<p>解答：int &nbsp;Funct( int n ) &nbsp;// &nbsp;n&nbsp;为非负整数</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;&nbsp;int a=0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int b=1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;int c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;if(n==0) c=1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;else if(n==1) c=1;</p>
+
+<p>&nbsp;&nbsp;&nbsp;else for(int i=2;i&lt;=n;i++) &nbsp;//应该n从2开始算起</p>
+
+<p>&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c=a+b;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a=b;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=c;</p>
+
+<p>&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;return c;</p>
+
+<p>}</p>
+
+<p>解答：</p>
+
+<p>现在大多数系统都是将低字位放在前面，而结构体中位域的申明一般是先声明高位。</p>
+
+<p>100 &nbsp;的二进制是&nbsp;001 100 100</p>
+
+<p>低位在前 &nbsp;&nbsp;高位在后 &nbsp;</p>
+
+<p>001----s3</p>
+
+<p>100----s2</p>
+
+<p>100----s1</p>
+
+<p>所以结果应该是&nbsp;1</p>
+
+<p>如果先申明的在低位则：</p>
+
+<p>001----s1</p>
+
+<p>100----s2</p>
+
+<p>100----s3</p>
+
+<p>结果是&nbsp;4</p>
+
+<p>1、原题跟little-endian，big-endian没有关系</p>
+
+<p>2、原题跟位域的存储空间分配有关，到底是从低字节分配还是从高字节分配，从Dev C++和VC7.1上看，都是从低字节开始分配，并且连续分配，中间不空，不像谭的书那样会留空位</p>
+
+<p>3、原题跟编译器有关，编译器在未用堆栈空间的默认值分配上有所不同，Dev C++未用空间分配为</p>
+
+<p>01110111b，VC7.1下为11001100b,所以在Dev C++下的结果为5，在VC7.1下为1。</p>
+
+<p>&nbsp;</p>
+
+<p>注：PC一般采用little-endian，即高高低低，但在网络传输上，一般采用big-endian，即高低低高，华为是做网络的，所以可能考虑big-endian模式，这样输出结果可能为4</p>
+
+<p><strong>&nbsp;</strong></p>
+
+<h2><a name="t119"></a><a name="t119"></a><a name="t118"></a><strong>35、判断一个字符串是不是回文&nbsp;&nbsp;abcba从左从右都都是一样的叫回文</strong></h2>
+
+<p>int IsReverseStr(char *aStr)</p>
+
+<p>{</p>
+
+<p>int i,j;</p>
+
+<p>int found=1;</p>
+
+<p>if(aStr==NULL)</p>
+
+<p>return -1;</p>
+
+<p>j=strlen(aStr);</p>
+
+<p>for(i=0;i&lt;j/2;i++)</p>
+
+<p>if(*(aStr+i)!=*(aStr+j-i-1))</p>
+
+<p>{</p>
+
+<p>found=0;</p>
+
+<p>break;</p>
+
+<p>}</p>
+
+<p>return found;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<p><strong>36、Josephu&nbsp;问题为：设编号为1，2，… n的n个人围坐一圈，约定编号为k（1&lt;=k&lt;=n）的人从1开始报数，数到m&nbsp;的那个人出列，它的下一位又从1开始报数，数到m的那个人又出列，依次类推，直到所有人出列为止，由此产生一个出队编号的序列。</strong></p>
+
+<p>&nbsp;</p>
+
+<p>数组实现：</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;malloc.h&gt;</p>
+
+<p>int Josephu(int n, int m)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int flag, i, j = 0;</p>
+
+<p>&nbsp;&nbsp;int *arr = (int *)malloc(n * sizeof(int));</p>
+
+<p>&nbsp;&nbsp;for (i = 0; i &lt; n; ++i)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;arr[i] = 1;</p>
+
+<p>&nbsp;&nbsp;for (i = 1; i &lt; n; ++i)</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;flag = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;while (flag &lt; m)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (j == n)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (arr[j])</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++flag;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++j;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;arr[j - 1] = 0;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("第%4d个出局的人是：%4d号\n", i, j);</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;free(arr);</p>
+
+<p>&nbsp;&nbsp;return j;</p>
+
+<p>}</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int n, m;</p>
+
+<p>&nbsp;&nbsp;scanf("%d%d", &amp;n, &amp;m);</p>
+
+<p>&nbsp;&nbsp;printf("最后胜利的是%d号！\n", Josephu(n, m));</p>
+
+<p>&nbsp;&nbsp;system("pause");</p>
+
+<p>&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>链表实现：</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>#include &lt;malloc.h&gt;</p>
+
+<p>typedef struct Node</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int index;</p>
+
+<p>&nbsp;&nbsp;struct Node *next;</p>
+
+<p>}JosephuNode;</p>
+
+<p>int Josephu(int n, int m)</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int i, j;</p>
+
+<p>&nbsp;&nbsp;JosephuNode *head, *tail;</p>
+
+<p>&nbsp;&nbsp;head = tail = (JosephuNode *)malloc(sizeof(JosephuNode));</p>
+
+<p>&nbsp;&nbsp;for (i = 1; i &lt; n; ++i)</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;tail-&gt;index = i;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;tail-&gt;next = (JosephuNode *)malloc(sizeof(JosephuNode));</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;tail = tail-&gt;next;</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;tail-&gt;index = i;</p>
+
+<p>&nbsp;&nbsp;tail-&gt;next = head;</p>
+
+<p>&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;for (i = 1; tail != head; ++i)</p>
+
+<p>&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j &lt; m; ++j)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail = head;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head = head-&gt;next;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;tail-&gt;next = head-&gt;next;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("第%4d个出局的人是：%4d号\n", i, head-&gt;index);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;free(head);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;head = tail-&gt;next;</p>
+
+<p>&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;i = head-&gt;index;</p>
+
+<p>&nbsp;&nbsp;free(head);</p>
+
+<p>&nbsp;&nbsp;return i;</p>
+
+<p>}</p>
+
+<p>int main()</p>
+
+<p>{</p>
+
+<p>&nbsp;&nbsp;int n, m;</p>
+
+<p>&nbsp;&nbsp;scanf("%d%d", &amp;n, &amp;m);</p>
+
+<p>&nbsp;&nbsp;printf("最后胜利的是%d号！\n", Josephu(n, m));</p>
+
+<p>&nbsp;&nbsp;system("pause");</p>
+
+<p>&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="t120"></a><a name="t120"></a><a name="t119"></a><strong>37、已知strcpy函数的原型是：</strong></h2>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char * strcpy(char * strDest,const char * strSrc);</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1.不调用库函数，实现strcpy函数。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2.解释为什么要返回char *。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;解说：</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1.strcpy的实现代码</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char * strcpy(char * strDest,const char * strSrc)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ((strDest==NULL)||(strSrc==NULL)) file://[/1]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw "Invalid argument(s)"; //[2]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char * strDestCopy=strDest; &nbsp;file://[/3]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ((*strDest++=*strSrc++)!='\0'); file://[/4]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return strDestCopy;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;错误的做法：</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;[1]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(A)不检查指针的有效性，说明答题者不注重代码的健壮性。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(B)检查指针的有效性时使用((!strDest)||(!strSrc))或(!(strDest&amp;&amp;strSrc))，说明答题者对C语言中类型的隐式转换没有深刻认识。在本例中char *转换为bool即是类型隐式转换，这种功能虽然灵活，但更多的是导致出错概率增大和维护成本升高。所以C++专门增加了bool、true、false三个关键字以提供更安全的条件表达式。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(C)检查指针的有效性时使用((strDest==0)||(strSrc==0))，说明答题者不知道使用常量的好处。直接使用字面常量（如本例中的0）会减少程序的可维护性。0虽然简单，但程序中可能出现很多处对指针的检查，万一出现笔误，编译器不能发现，生成的程序内含逻辑错误，很难排除。而使用NULL代替0，如果出现拼写错误，编译器就会检查出来。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;[2]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(A)return new string("Invalid argument(s)");，说明答题者根本不知道返回值的用途，并且他对内存泄漏也没有警惕心。从函数中返回函数体内分配的内存是十分危险的做法，他把释放内存的义务抛给不知情的调用者，绝大多数情况下，调用者不会释放内存，这导致内存泄漏。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(B)return 0;，说明答题者没有掌握异常机制。调用者有可能忘记检查返回值，调用者还可能无法检查返回值（见后面的链式表达式）。妄想让返回值肩负返回正确值和异常值的双重功能，其结果往往是两种功能都失效。应该以抛出异常来代替返回值，这样可以减轻调用者的负担、使错误不会被忽略、增强程序的可维护性。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;[3]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(A)忘记保存原始的strDest值，说明答题者逻辑思维不严密。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;[4]</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(A)循环写成while (*strDest++=*strSrc++);，同[1](B)。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(B)循环写成while (*strSrc!='\0') *strDest++=*strSrc++;，说明答题者对边界条件的检查不力。循环体结束后，strDest字符串的末尾没有正确地加上'\0'。</p>
+
+<p>&nbsp;</p>
+
+<h1><a name="t121"></a><a name="t121"></a><a name="t120"></a><strong>第四部分：附加部分</strong></h1>
+
+<h2><a name="t122"></a><a name="t122"></a><a name="t121"></a><strong>1、位域 ：&nbsp;&nbsp;&nbsp;</strong></h2>
+
+<p>有些信息在存储时，并不需要占用一个完整的字节， 而只需占几个或一个二进制位。例如在存放一个开关量时，只有0和1&nbsp;两种状态， 用一位二进位即可。为了节省存储空间，并使处理简便，Ｃ语言又提供了一种数据结构，称为“位域”或“位段”。所谓“位域”是把一个字节中的二进位划分为几个不同的区域， 并说明每个区域的位数。每个域有一个域名，允许在程序中按域名进行操作。 这样就可以把几个不同的对象用一个字节的二进制位域来表示。一、位域的定义和位域变量的说明位域定义与结构定义相仿，其形式为： &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>struct&nbsp;位域结构名 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>{&nbsp;位域列表&nbsp;}; &nbsp;&nbsp;&nbsp;</p>
+
+<p>其中位域列表的形式为： 类型说明符 位域名：位域长度 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>例如： &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>struct bs &nbsp;&nbsp;&nbsp;</p>
+
+<p>{ &nbsp;&nbsp;&nbsp;</p>
+
+<p>int a:8; &nbsp;&nbsp;&nbsp;</p>
+
+<p>int b:2; &nbsp;&nbsp;&nbsp;</p>
+
+<p>int c:6; &nbsp;&nbsp;&nbsp;</p>
+
+<p>}; &nbsp;&nbsp;&nbsp;</p>
+
+<p>位域变量的说明与结构变量说明的方式相同。 可采用先定义后说明，同时定义说明或者直接说明这三种方式。例如： &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>struct bs &nbsp;&nbsp;&nbsp;</p>
+
+<p>{ &nbsp;&nbsp;&nbsp;</p>
+
+<p>int a:8; &nbsp;&nbsp;&nbsp;</p>
+
+<p>int b:2; &nbsp;&nbsp;&nbsp;</p>
+
+<p>int c:6; &nbsp;&nbsp;&nbsp;</p>
+
+<p>}data; &nbsp;&nbsp;&nbsp;</p>
+
+<p>说明data为bs变量，共占两个字节。其中位域a占8位，位域b占2位，位域c占6位。对于位域的定义尚有以下几点说明： &nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>1.&nbsp;一个位域必须存储在同一个字节中，不能跨两个字节。如一个字节所剩空间不够存放另一位域时，应从下一单元起存放该位域。也可以有意使某位域从下一单元开始。例如： &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>struct bs &nbsp;&nbsp;&nbsp;</p>
+
+<p>{ &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned a:4 &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned :0 /*空域*/ &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned b:4 /*从下一单元开始存放*/ &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned c:4 &nbsp;&nbsp;&nbsp;</p>
+
+<p>} &nbsp;&nbsp;&nbsp;</p>
+
+<p>在这个位域定义中，a占第一字节的4位，后4位填0表示不使用，b从第二字节开始，占用4位，c占用4位。 &nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>2.&nbsp;由于位域不允许跨两个字节，因此位域的长度不能大于一个字节的长度，也就是说不能超过8位二进位。 &nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>3.&nbsp;位域可以无位域名，这时它只用来作填充或调整位置。无名的位域是不能使用的。例如： &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>struct k &nbsp;&nbsp;&nbsp;</p>
+
+<p>{ &nbsp;&nbsp;&nbsp;</p>
+
+<p>int a:1 &nbsp;&nbsp;&nbsp;</p>
+
+<p>int :2 /*该2位不能使用*/ &nbsp;&nbsp;&nbsp;</p>
+
+<p>int b:3 &nbsp;&nbsp;&nbsp;</p>
+
+<p>int c:2 &nbsp;&nbsp;&nbsp;</p>
+
+<p>}; &nbsp;&nbsp;&nbsp;</p>
+
+<p>从以上分析可以看出，位域在本质上就是一种结构类型， 不过其成员是按二进位分配的。 &nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>二、位域的使用位域的使用和结构成员的使用相同，其一般形式为： 位域变量名•位域名 位域允许用各种格式输出。 &nbsp;&nbsp;&nbsp;</p>
+
+<p>main(){ &nbsp;&nbsp;&nbsp;</p>
+
+<p>struct bs &nbsp;&nbsp;&nbsp;</p>
+
+<p>{ &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned a:1; &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned b:3; &nbsp;&nbsp;&nbsp;</p>
+
+<p>unsigned c:4; &nbsp;&nbsp;&nbsp;</p>
+
+<p>} bit,*pbit; &nbsp;&nbsp;&nbsp;</p>
+
+<p>bit.a=1; &nbsp;&nbsp;&nbsp;</p>
+
+<p>bit.b=7; &nbsp;&nbsp;&nbsp;</p>
+
+<p>bit.c=15; &nbsp;&nbsp;&nbsp;</p>
+
+<p>pri</p>
+
+<p>&nbsp;</p>
+
+<p>改错：</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>int main(void) {</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int **p;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;int arr[100];</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;p = &amp;arr;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+
+<p>}</p>
+
+<p>解答：</p>
+
+<p>搞错了,是指针类型不同,</p>
+
+<p>int **p; //二级指针</p>
+
+<p>&amp;arr; //得到的是指向第一维为100的数组的指针</p>
+
+<p>#include &lt;stdio.h&gt;</p>
+
+<p>int main(void) {</p>
+
+<p>int **p, *q;</p>
+
+<p>int arr[100];</p>
+
+<p>q = arr;</p>
+
+<p>p = &amp;q;</p>
+
+<p>return 0;</p>
+
+<p>}</p>
+
+<p>编译预处理命令一定有#号吗？</p>
+
+<p>程序设计语言的预处理的概念:在编译之前进行的处理。&nbsp;C语言的预处理主要有三个方面的内容: 1.<a href="http://baike.haosou.com/doc/6756756-6971348.html" target="_blank" rel="nofollow noopener">宏定义</a>; 2.文件包含; 3.<a href="http://baike.haosou.com/doc/1622644-1715462.html" target="_blank" rel="nofollow noopener">条件编译</a>。 预处理命令以符号"#"开头</p>
+
+<p>在程序中凡是以＃号开始的都是预处理命令；宏替换不占用运行时间，只占用编译时间；宏定义后面是没有；好的 &nbsp;如#define pi 3.1415;错的 &nbsp;有分号</p>                                    </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/wangguchao/article/details/82469600&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
+                                </div>
+
+
+<div id="paginator"></div></div><div id="post-footer"><hr><a href="/posts/36b57fa8/">Hexo-NeXT分页按钮显示问题 Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary><font color=#CC2D08>交</font><font color=#995A10>个</font><font color=#668718>盆</font><font color=#33B420>友</font></summary><div id="alipay"><span>照片 | Picture</span><br><img src="http://qccwitqct.bkt.clouddn.com/image/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="http://qccwitqct.bkt.clouddn.com/image/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
+ el: '#Valine'
+ , appId: 'plL7RniFJ5sGo98XaVBF8Twf-gzGzoHsz'
+ , appKey: 'JSR12m0LR20zvoTpNhk0QdNU'
+ , placeholder: '此条评论委托企鹅物流发送'
+})</script></div></article><aside><div id="about"><a href="/" id="logo"><img src="http://qccwitqct.bkt.clouddn.com/image/1.png" alt="Logo"></a><h1 id="Dr"><a href="http://ak.mooncell.wiki/" target="_blank" rel="noopener"> Dr.RoinxxX</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">16</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">7</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">2</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text">第一部分：基本概念及其它问答题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.1.</span> <span class="toc-text">1、关键字static的作用是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.2.</span> <span class="toc-text">2、“引用”与指针的区别是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.3.</span> <span class="toc-text">3、.h头文件中的ifndef&#x2F;define&#x2F;endif&amp;nbsp;的作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.4.</span> <span class="toc-text">4、#include&lt;file.h&gt;&amp;nbsp;与&amp;nbsp;#include &quot;file.h&quot;的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.5.</span> <span class="toc-text">5、描述实时系统的基本特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.6.</span> <span class="toc-text">6、全局变量和局部变量在内存中是否有区别？如果有，是什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.7.</span> <span class="toc-text">7、什么是平衡二叉树？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.8.</span> <span class="toc-text">8、堆栈溢出一般是由什么原因导致的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.9.</span> <span class="toc-text">9、冒泡排序算法的时间复杂度是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.10.</span> <span class="toc-text">10、什么函数不能声明为虚函数？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.11.</span> <span class="toc-text">11、队列和栈有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.12.</span> <span class="toc-text">12、不能做switch()的参数类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.13.</span> <span class="toc-text">13、局部变量能否和全局变量重名？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.14.</span> <span class="toc-text">14、如何引用一个已经定义过的全局变量？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.15.</span> <span class="toc-text">15、全局变量可不可以定义在可被多个.C文件包含的头文件中？为什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.16.</span> <span class="toc-text">16、语句for(&amp;nbsp;；1&amp;nbsp;；)有什么问题？它是什么意思？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.17.</span> <span class="toc-text">18、statac&amp;nbsp;全局变量、局部变量、函数与普通全局变量、局部变量、函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.18.</span> <span class="toc-text">20、解释堆和栈的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.19.</span> <span class="toc-text">21.什么是预编译，何时需要预编译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.20.</span> <span class="toc-text">22、关键字const是什么含意？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.21.</span> <span class="toc-text">23、关键字volatile有什么含意 并给出三个不同的例子。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.22.</span> <span class="toc-text">24、三种基本的数据模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.23.</span> <span class="toc-text">25、结构与联合有和区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.24.</span> <span class="toc-text">26、描述内存分配方式以及它们的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.25.</span> <span class="toc-text">27、请说出const与#define&amp;nbsp;相比，有何优点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.26.</span> <span class="toc-text">28、简述数组与指针的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.27.</span> <span class="toc-text">29、分别写出BOOL,int,float,指针类型的变量a&amp;nbsp;与“零”的比较语句。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.28.</span> <span class="toc-text">30、如何判断一段程序是由C&amp;nbsp;编译程序还是由C++编译程序编译的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.29.</span> <span class="toc-text">31、论述含参数的宏与函数的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.30.</span> <span class="toc-text">32、用两个栈实现一个队列的功能？要求给出算法和思路！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.31.</span> <span class="toc-text">33、嵌入式系统中经常要用到无限循环，你怎么样用C编写死循环呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.32.</span> <span class="toc-text">34、位操作（Bit manipulation）&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.33.</span> <span class="toc-text">35、访问固定的内存位置（Accessing fixed memory locations）&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.34.</span> <span class="toc-text">36、中断（Interrupts）&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.35.</span> <span class="toc-text">37、动态内存分配（Dynamic memory allocation）&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.36.</span> <span class="toc-text">38、Typedef&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.37.</span> <span class="toc-text">39、用变量a给出下面的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.38.</span> <span class="toc-text">40、解释局部变量、全局变量和静态变量的含义。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.39.</span> <span class="toc-text">41、写一个“标准”宏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.40.</span> <span class="toc-text">43、一个单向链表，不知道头节点,一个指针指向其中的一个节点，问如何删除这个指针指向的节点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.41.</span> <span class="toc-text">44.C语言中各进制表示法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number">2.</span> <span class="toc-text">第二部分：程序代码评价或者找错</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.1.</span> <span class="toc-text">4、设有以下说明和定义：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.2.</span> <span class="toc-text">5、请写出下列代码的输出内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.3.</span> <span class="toc-text">6、写出下列代码的输出内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.4.</span> <span class="toc-text">9、请问下面程序会出现什么情况?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.5.</span> <span class="toc-text">11、写出下面的结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.6.</span> <span class="toc-text">12、以下代码中的两个sizeof用法有问题吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.7.</span> <span class="toc-text">13、写出输出结果（红色标记）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.8.</span> <span class="toc-text">14、请问以下代码有什么问题：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.9.</span> <span class="toc-text">15、有以下表达式：（红色标记）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.10.</span> <span class="toc-text">16、交换两个变量的值，不使用第三个变量。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.11.</span> <span class="toc-text">17、下面的程序会出现什么结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.12.</span> <span class="toc-text">18、下面的语句会出现什么结果？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.13.</span> <span class="toc-text">19、(void *)ptr&amp;nbsp;和&amp;nbsp;(*(void**))ptr的结果是否相同？（红色标记）&amp;nbsp;&amp;nbsp;&amp;nbsp;？？？？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.14.</span> <span class="toc-text">20、问函数既然不会被其它函数调用，为什么要返回1？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.15.</span> <span class="toc-text">21、对绝对地址0x100000赋值且想让程序跳转到绝对地址是0x100000去执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.16.</span> <span class="toc-text">22、输出多少？并分析过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.17.</span> <span class="toc-text">23、分析下面的程序：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.18.</span> <span class="toc-text">24、char a[10],strlen(a)为什么等于15？运行的结果&amp;nbsp;&amp;nbsp;&amp;nbsp;我测了2 &amp;nbsp;&amp;nbsp;10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.19.</span> <span class="toc-text">25、long a&#x3D;0x801010;a+5&#x3D;?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.20.</span> <span class="toc-text">26、给定结构struct A&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.21.</span> <span class="toc-text">27、下面的函数实现在一个数上加一个数，有什么错误？请改正。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.22.</span> <span class="toc-text">28、给出下面程序的答案（红色标记）&#x2F;&#x2F;好像有问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.23.</span> <span class="toc-text">29、求函数返回值，输入x&#x3D;9999;&amp;nbsp;******** &amp;nbsp;&amp;nbsp;还是不知道？？？？？？？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.24.</span> <span class="toc-text">30、分析：（红色标记）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.25.</span> <span class="toc-text">31、下面这个程序执行后会有什么错误或者效果:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.26.</span> <span class="toc-text">32、写出sizeof(struct name1)&#x3D;,sizeof(struct name2)&#x3D;的结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.27.</span> <span class="toc-text">33、struct s1（红色标记）*******</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.28.</span> <span class="toc-text">34、在对齐为4的情况下&amp;nbsp;&amp;nbsp;注意************</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.29.</span> <span class="toc-text">35、找错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.30.</span> <span class="toc-text">36、写出输出结果&amp;nbsp;&amp;nbsp;&amp;nbsp;？不懂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.31.</span> <span class="toc-text">37、写出程序运行结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.32.</span> <span class="toc-text">38、评价代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.33.</span> <span class="toc-text">39、请问一下程序将输出什么结果？&amp;nbsp;&amp;nbsp;****</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.34.</span> <span class="toc-text">&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.35.</span> <span class="toc-text">40、写出输出结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.36.</span> <span class="toc-text">41、对下面程序进行分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.37.</span> <span class="toc-text">42、分析：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.38.</span> <span class="toc-text">43、分析下面的代码：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.39.</span> <span class="toc-text">44、写出输出结果&amp;nbsp;&amp;nbsp;&amp;nbsp;我的编译器&amp;nbsp;m&#x3D;7, n&#x3D;7，b&#x3D;7 &amp;nbsp;若把++b变成b++，则结果为m&#x3D;7, n&#x3D;3，b&#x3D;7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">2.40.</span> <span class="toc-text">45、找出错误&amp;nbsp;&amp;nbsp;&amp;nbsp;&#x2F;&#x2F;切记遇到char一定要考虑\0 &amp;nbsp;和空间+1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number">3.</span> <span class="toc-text">第三部分：编程题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.1.</span> <span class="toc-text">1、读文件file1.txt的内容（例如）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.2.</span> <span class="toc-text">2、输出和为一个给定整数的所有组合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.3.</span> <span class="toc-text">3、递规反向输出字符串的例子,可谓是反序的经典例程.**********************************</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.4.</span> <span class="toc-text">5、两路归并排序&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;好 比较简短</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.5.</span> <span class="toc-text">6、用递归算法判断数组a[N]是否为一个递增数组。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.6.</span> <span class="toc-text">7、单连表的建立，把&#39;a&#39;--&#39;z&#39;26个字母插入到连表中，并且倒叙，还要打印！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.7.</span> <span class="toc-text">8、请列举一个软件中时间换空间或者空间换时间的例子。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.8.</span> <span class="toc-text">9、outputstr所指的值为123456789</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.9.</span> <span class="toc-text">10、不用库函数,用C语言实现将一整型数字转化为字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.10.</span> <span class="toc-text">11、求组合数： 求n个数（1....n）中k个数的组合....</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.11.</span> <span class="toc-text">12、用指针的方法，将字符串“ABCD1234efgh”前后对调显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.12.</span> <span class="toc-text">13、有一分数序列：1&#x2F;2,1&#x2F;4,1&#x2F;6,1&#x2F;8……，用函数调用的方法，求此数列前20项的和</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.13.</span> <span class="toc-text">14、有一个数组a[1000]存放0--1000;要求每隔二个数删掉一个数，到末尾时循环至开头继续进行，求最后一个被删掉的数的原始下标位置。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.14.</span> <span class="toc-text">15、实现strcmp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.15.</span> <span class="toc-text">16、实现子串定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.16.</span> <span class="toc-text">17、已知一个单向链表的头，请写出删除其某一个结点的算法，要求，先找到此结点，然后删除。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.17.</span> <span class="toc-text">18、有1,2,....一直到n的无序数组,求排序算法,并且要求时间复杂度为O(n),空间复杂度O(1),使用交换,而且一次只能交换两个数.（华为）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.18.</span> <span class="toc-text">19、写出程序把一个链表中的接点顺序倒排</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.19.</span> <span class="toc-text">20、写出程序删除链表中的所有接点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.20.</span> <span class="toc-text">21、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.21.</span> <span class="toc-text">&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.22.</span> <span class="toc-text">22、写一个函数，功能：完成内存之间的拷贝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.23.</span> <span class="toc-text">23、公司考试这种题目主要考你编写的代码是否考虑到各种情况，是否安全（不会溢出）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.24.</span> <span class="toc-text">24、两个字符串，s,t;把t字符串插入到s字符串中，s字符串有足够的空间存放t字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.25.</span> <span class="toc-text">25、在一个字符串中找到可能的最长的子字符串，且该字符串是由同一字符组成的。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.26.</span> <span class="toc-text">26、在给定的内存区域搜索给定的字符，并返回该字符所在位置索引值。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.27.</span> <span class="toc-text">27、给定字符串A和B,输出A和B中的最大公共子串。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.28.</span> <span class="toc-text">28、写一个函数比较两个字符串str1和str2的大小，若相等返回0，若str1大于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.29.</span> <span class="toc-text">29、求1000！的未尾有几个0（用素数相乘的方法来做，如72&#x3D;2*2*2*3*3）;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.30.</span> <span class="toc-text">30、有双向循环链表结点定义为：&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.31.</span> <span class="toc-text">31、编程实现：找出两个字符串中最大公共子字符串,如&quot;abccade&quot;,&quot;dgcadde&quot;的最大子串为&quot;cad&quot;&amp;nbsp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.32.</span> <span class="toc-text">32、编程实现：把十进制数(long型)分别以二进制和十六进制形式输出，不能使用printf系列库函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.33.</span> <span class="toc-text">33、输入N,&amp;nbsp;打印&amp;nbsp;N*N&amp;nbsp;矩阵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.34.</span> <span class="toc-text">34、斐波拉契数列递归实现的方法如下：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.35.</span> <span class="toc-text">35、判断一个字符串是不是回文&amp;nbsp;&amp;nbsp;abcba从左从右都都是一样的叫回文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.36.</span> <span class="toc-text">37、已知strcpy函数的原型是：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number">4.</span> <span class="toc-text">第四部分：附加部分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">4.1.</span> <span class="toc-text">1、位域 ：&amp;nbsp;&amp;nbsp;&amp;nbsp;</span></a></li></ol></li></ol></div></div><footer><nobr><span class="text-title">©</span><span class="text-content">None</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">就是不给我过审</span></nobr><wbr><wbr><nobr>published with&nbsp;<a href="http://hexo.io" target="_blank" rel="noopener">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a href="https://github.com/Yue-plus/hexo-theme-arknights" target="_blank" rel="noopener">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a href="https://github.com/Yue-plus" target="_blank" rel="noopener">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script></body></html>
