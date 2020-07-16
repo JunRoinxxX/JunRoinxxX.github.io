@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-16T10:01:19.737Z</updated>
+  <updated>2020-07-16T10:01:35.805Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/posts/4f23aaa0/"/>
     <id>http://yoursite.com/posts/4f23aaa0/</id>
     <published>2020-07-16T09:33:02.000Z</published>
-    <updated>2020-07-16T10:01:19.737Z</updated>
+    <updated>2020-07-16T10:01:35.805Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>​        本人使用过的一块n4板卡上搭载了Linux系统，但由于初始的公钥问题老是报错，<br>使得软件源无法得到更新，之前在某个非常偏僻的网站上翻到了一种可行的办法，<br>但文章后来被删了，于是赶紧记录下来</p></blockquote><p>换源：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">vi /etc/apt/sources.list<br></code></pre></td></tr></table></figure><p>将内容替换为：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># binary default</span><br>deb [trusted=yes] http://ftp.ports.debian.org/debian-ports/ unstable main<br><span class="hljs-comment"># deb http://incoming.ports.debian.org/buildd/ unstable main</span><br>deb [trusted=yes] http://ftp.ports.debian.org/debian-ports/ unreleased main<br><br><span class="hljs-comment"># contrib and non-free arch:all packages (i.e. firmware)</span><br>deb [arch=all] http://ftp.debian.org/debian/ unstable contrib non-free<br><br><span class="hljs-comment"># source</span><br><span class="hljs-comment"># deb-src http://ftp.debian.org/debian/ unstable main</span><br><span class="hljs-comment"># deb-src http://incoming.debian.org/debian-buildd/ buildd-unstable main</span><br></code></pre></td></tr></table></figure><p>然后在命令行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget http://ftp.ports.debian.org/debian-ports/pool/main/d/debian-ports-archive-keyring/debian-ports-archive-keyring_2019.11.05_all.deb<br></code></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dpkg -i debian-ports-archive-keyring_2019.11.05_all.deb<br></code></pre></td></tr></table></figure><p>最后update upgrade即可</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt update<br></code></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt upgrade<br></code></pre></td></tr></table></figure><p>完美解决我的问题~<br>希望能对其他的状况有所帮助。<br><del>非常的人性化</del></p>]]></content>
     
