@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-16T10:01:35.805Z</updated>
+  <updated>2020-07-26T15:45:13.528Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Keil5-C51-安装教程</title>
+    <link href="http://yoursite.com/posts/7e3133ec/"/>
+    <id>http://yoursite.com/posts/7e3133ec/</id>
+    <published>2020-07-26T15:42:15.000Z</published>
+    <updated>2020-07-26T15:45:13.528Z</updated>
+    
+    <content type="html"><![CDATA[<div id="article_content" class="article_content clearfix">                            <div class="htmledit_views" id="content_views">                                            <h2 id="activity-name"><a name="t0"></a>（🙏转自某位伟大的管家🙏）</h2><p><font size=4><a href="/Documents/Keil+uvision5+MDK版软件安装教程.docx">安装教程文档(搬砖太难啦，只能放文档里面啦)</a></font></p><p><em>换源链接：</em></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">https:<span class="hljs-comment">//pan.baidu.com/s/184l7HFhDmr77w9_2t-Iwcg</span><br><br>ppi3<br></code></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div id=&quot;article_content&quot; class=&quot;article_content clearfix&quot;&gt;
+                            &lt;div class=&quot;htmledit_views&quot; id=&quot;content_views&quot;&gt;
+    
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hide" scheme="http://yoursite.com/tags/hide/"/>
+    
+      <category term="ALL" scheme="http://yoursite.com/tags/ALL/"/>
+    
+  </entry>
   
   <entry>
     <title>关于Riscv板载Linux公钥问题老报错的resolve</title>
