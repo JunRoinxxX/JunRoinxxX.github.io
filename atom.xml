@@ -70,9 +70,9 @@
     
       <category term="ALL" scheme="http://yoursite.com/tags/ALL/"/>
     
-      <category term="Skills" scheme="http://yoursite.com/tags/Skills/"/>
-    
       <category term="Linux-shell" scheme="http://yoursite.com/tags/Linux-shell/"/>
+    
+      <category term="Skills" scheme="http://yoursite.com/tags/Skills/"/>
     
   </entry>
   
