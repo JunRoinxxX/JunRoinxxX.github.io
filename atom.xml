@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-19T03:50:39.447Z</updated>
+  <updated>2020-08-19T03:50:54.717Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/posts/c70e2218/"/>
     <id>http://yoursite.com/posts/c70e2218/</id>
     <published>2020-08-19T03:49:16.000Z</published>
-    <updated>2020-08-19T03:50:39.447Z</updated>
+    <updated>2020-08-19T03:50:54.717Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Astyle代码格式化"><a href="#Astyle代码格式化" class="headerlink" title="Astyle代码格式化"></a>Astyle代码格式化</h1><blockquote><p>详解网址：<a href="https://www.bbsmax.com/A/WpdKgnZXdV/" target="_blank" rel="noopener">https://www.bbsmax.com/A/WpdKgnZXdV/</a></p></blockquote><h2>A&nbsp;Free,&nbsp;Fast&nbsp;and&nbsp;Small&nbsp;Automatic&nbsp;Formatter<br>for&nbsp;C,&nbsp;C++,&nbsp;C#,&nbsp;and&nbsp;Java&nbsp;Source&nbsp;Code</h2><p>项目网址：<a href="http://astyle.sourceforge.net/astyle.html" target="_blank" rel="external nofollow noreferrer noopener">http://astyle.sourceforge.net/astyle.html</a></p><p>Astyle可以从命令行运行，由于它用C++编写，也可以作为C++类用在C++程序中。</p><h3 id="对于嵌入keil5中的AStyle的应用，推荐参数添加："><a href="#对于嵌入keil5中的AStyle的应用，推荐参数添加：" class="headerlink" title="对于嵌入keil5中的AStyle的应用，推荐参数添加："></a>对于嵌入keil5中的AStyle的应用，推荐参数添加：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">-p -a !E<br>//Attach brackets to their pre-block statements<br></code></pre></td></tr></table></figure>]]></content>
     
